@@ -1,0 +1,122 @@
+.animation_playground{ height:100%;/*overflow: hidden;*/}
+span{text-align: left;
+  font-size:20em;
+  position:absolute;
+  display: inline-block;
+  width:500px;
+  line-height: 500px;
+  height:500px;
+  top:20%;
+  right:20%;
+  -webkit-animation: orbit 6s linear infinite alternate;
+  -moz-animation: orbit 6s linear infinite alternate;
+  -0-animation: orbit 6s linear infinite alternate;
+  animation: orbit 6s linear infinite alternate;
+
+}
+
+  @-webkit-keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity:0.4;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    opacity:0.4;
+  }
+
+}
+
+}
+
+  @-moz-keyframes orbit {
+  0% {
+    -moz-transform: rotate(0deg);
+    opacity:0.4;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    opacity:0.4;
+  }
+
+}
+
+}
+
+  @-o-keyframes orbit {
+  0% {
+    -o-transform: rotate(0deg);
+    opacity:0.4;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    -o-transform: rotate(-360deg);
+    opacity:0.4;
+  }
+
+}
+
+}
+
+  @keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+    opacity:0.4;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity:0.4;
+  }
+
+}
+
+.animation_playground>span:nth-child(2){
+  -webkit-animation-duration: 12000ms;
+  -moz-animation-duration: 12000ms;
+  -0-animation-duration:12000ms;
+  animation-duration:12000ms;
+  color:white
+
+}
+.animation_playground>span:nth-child(3){
+  -webkit-animation-duration: 15000ms;
+  -moz-animation-duration:15000ms;
+  -o-animation-duration:15000ms;
+  animation-duration:15000ms;
+  }
+.animation_playground>span:nth-child(4){
+  -webkit-animation-duration: 16000ms;
+  -moz-animation-duration:16000ms;
+  -o-animation-duration:16000ms;
+  animation-duration:16000ms;
+  color:red;
+}
+.animation_playground>span:nth-child(5){
+  -webkit-animation-duration: 17000ms;
+-moz-animation-duration:17000ms;
+-o-animation-duration:17000ms;
+animation-duration:17000ms;
+}
+.animation_playground>span:nth-child(2n+1){
+-webkit-animation-direction: reverse;
+-moz-animation-duration: reverse;
+-o-animation-duration:reverse;
+animation-duration:reverse;
+
+}
+.animation_playground>span:nth-child(2n){
+color:white;
+
+
+}

@@ -1,0 +1,291 @@
+   /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	.nixie{font-family: 'Nixie One', cursive;}
+	.lato{font-family: 'Lato', sans-serif;}
+	.poiret{font-family: 'Poiret One', cursive;}
+	.gravitas{font-family: 'Gravitas One', cursive;}
+	.flamenco{font-family: 'Flamenco', cursive;}
+	.wire_one{font-family: 'Wire One', sans-serif;}
+	.lime_light{font-family: 'Limelight', cursive;}
+	.fredoka{font-family: 'Fredoka One', cursive;}
+	.comfortaa{font-family: 'Comfortaa', cursive;}
+	.abril_fatface{font-family: 'Abril Fatface', cursive;}
+	.stint_expanded{font-family: 'Stint Ultra Expanded';}
+	.raleway{font-family: 'Raleway', sans-serif;}
+	.roboto_slab{font-family: 'Roboto Slab', serif;}
+	.roboto_c{font-family: 'Roboto Condensed', serif;}
+	.roboto{font-family: 'Roboto', serif;}
+	.quicksand{font-family: 'Quicksand', sans-serif;}
+	.oswald{font-family: 'Oswald', sans-serif;}
+	.open_c{font-family: 'Open Sans Condensed', sans-serif;}
+	.arvo{font-family: 'Arvo', serif;}
+	.playfair{font-family: 'Playfair Display', serif;}
+	.pt_serif{font-family: 'PT Serif', serif;}
+	.droid_serif{font-family: 'Droid Serif', serif;}
+	.merriweather{font-family: 'Merriweather', serif;}
+
+	.w100 {font-weight: 100;}
+	.w200 {font-weight: 200;}
+	.w300 {font-weight: 300;}
+	.w400 {font-weight: 400;}
+	.w500 {font-weight: 500;}
+	.w600 {font-weight: 600;}
+	.w700 {font-weight: 700;}
+	.w800 {font-weight: 800;}
+	.w900 {font-weight: 900;}
+
+	.i{font-style: italic;}
+	.caps{text-transform: uppercase;}
+	.justify{text-align: justify;}
+
+/* 
+
+.w100 {font-weight: 100;}
+.w200 {font-weight: 200;}
+.w300 {font-weight: 300;}
+.w400 {font-weight: 400;}
+.w500 {font-weight: 500;}
+.w600 {font-weight: 600;}
+.w700 {font-weight: 700;}
+.w800 {font-weight: 800;}
+.w900 {font-weight: 900;}
+
+.i{font-style: italic;}
+
+.nixie			Nixie One
+.lato 			Lato
+.poiret			Poiret One
+.gravitas		Gravitas One
+.flamenco		Flamenco
+.wire_one		Wire One
+.lime_light		Limelight
+.fredoka		Fredoka One
+.comfortaa		Comfortaa
+.abril_fatface	Abril Fatface
+.stint_expanded	Stint Ultra Expanded
+.raleway		Raleway
+.roboto_slab	Roboto Slab
+.roboto			Roboto
+.roboto_c		Roboto Condensed
+.quicksand		Quicksand
+
+*/
+	
+	body{background-image: url(bg.png); background-color: #fff;}
+	#all{ display: none; }
+	
+	
+	/* GRID AND LAYOUT___________________________________________ */
+
+	.container{position: relative; width: 990px; margin: 0 auto; background-color: #fff; padding:3em;}
+	.columns{float: left; display: inline; margin: 0 10px; /*outline:red solid 1px;*/}
+
+    .container .one.columns              {width: 90px; }
+    .container .two.columns              {width: 200px; }
+    .container .three.columns            {width: 310px; }
+    .container .four.columns             {width: 420px; }
+    .container .five.columns             {width: 530px; }
+    .container .six.columns              {width: 640px; }
+    .container .seven.columns            {width: 750px; }
+    .container .eight.columns            {width: 860px; }
+    .container .nine.columns, .container .full.columns{width: 970px;}
+ 
+
+    .container .offset-by-one                   { padding-left: 110px; }
+    .container .offset-by-two                   { padding-left: 220px; }
+    .container .offset-by-three                 { padding-left: 144px; }
+    .container .offset-by-four                  { padding-left: 430px; }
+    .container .offset-by-five                  { padding-left: 540px; }
+    .container .offset-by-six                   { padding-left: 650px; }
+    .container .offset-by-seven                 { padding-left: 760px; }
+    .container .offset-by-eight                 { padding-left: 870px; }
+
+
+
+    /*Via Dave Gamache - https://github.com/dhg/Skeleton*/
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+    
+    }
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+    footer{margin: 4em 0; position: relative; top:0.75em;}
+
+
+	/* TYPOGRAPHY___________________________________________ */
+
+	header h1{font-size: 3em; text-transform: uppercase; font-weight: 400; border: 6px #000 solid;  padding:10px 0; letter-spacing: 1px; text-align: center;}
+	header a{text-decoration: none; color:#000;}
+	.title{position: relative; font-size: 1.5em; border-bottom: 1px #000 solid; padding:0 0 5px 0; left:6px;}
+	header h1:hover{
+		background-color: #ccc;
+		color:#fff;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;}
+	p.main{line-height: 2em; font-size: 1em; position: relative; top:-8px;}
+	footer a{text-transform: uppercase; color:#00BDFF;; text-decoration: none; margin: 3em 0; position: relative; padding:0.5em; border: 3px solid #00BDFF;}
+	footer a:hover{
+		color:#fff;
+		background-color:#00BDFF;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+	}
+
+	section p>a, section p>a:visited{color:#555;}
+	section p>a:hover{color:#aaa;}
+
+
+
+	/*Highlight Selection Colors___________________*/
+	*::selection {
+	background: #00BDFF; color:#fff;}
+	*::-moz-selection {
+	background: #00BDFF; color:#fff;}
+
+	/* NAVIGATION___________________________________________ */
+	.active{font-weight: bolder;}
+	#top_img{background-color: #00BDFF; margin: 0 0 1em 0; position: relative;}
+	nav ul.columns{margin: 0;}
+	nav{float: left; position: relative; bottom:-25px; letter-spacing: 1px; margin: 0 0 3em 0;}
+	nav > ul >li{position: relative; display: inline-block; padding: 0; font-size: 1.5em; border-bottom: 1px #000 solid; padding:0 0 5px 0; float: left;}
+	nav > ul >li:last-child{width:305px; margin:0 0 0 5px;}
+	nav a{text-decoration: none; color:#000; padding: 0; text-transform: uppercase;}
+	nav a:hover{opacity: 0.5; cursor: pointer;}
+	nav li img{position: absolute; bottom:3px; right:0; opacity: 0.6;}
+	nav > ul >li:last-child a{color:#666;}
+
+	/*nav li:last-child a{color:#ccc;}
+	nav li:last-child {border-color: #ccc;}*/
+
+	li.accordionButton>a:hover{cursor: crosshair;}
+	.accordionContent{
+		position: absolute;
+		top:30px;
+		left:445px;
+		width: 198px;
+		background-color: #ccc;
+		border: 1px #000 solid;
+		padding:5px;
+		font-weight: 300;
+		z-index: 10;
+		text-transform: uppercase;
+	}
+	.accordionContent li{display: block; margin: 10px 0;}
+	
+	/* CONTENT___________________________________________ */
+
+	/* BOXES___________________________________________ */
+	.letter_box{height:74px; width: 74px; line-height: 74px; border: 6px solid #00BDFF; color:#00BDFF; text-align: center; font-size:7em; font-weight: 600; }
+	.artist_box{height:188px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; font-weight: 600; background-color: red; margin-bottom: 20px; color:#fff; line-height:320px; text-align:center; font-size: 1.5em; text-transform: uppercase;}
+	.artist_box a{text-decoration: none; color:#fff;}
+	#artists div:hover{
+		background-color:#00BDFF;
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;}
+
+	#macdonald {background: url(points_7.png) center;}
+	#mcpharlin {background: url(points_4.png) 50% center;}
+	#schacke {background: url(points_3.png) 30%  center;}
+	#smith {background: url(tobin_points.png) 0% center;}
+	#underware {background: url(points_2.png) center;}
+	#vallee {background: url(points_6.png) center;}
+	#work div{margin-bottom: 20px;}
+
+	.swipe {
+	  overflow: hidden;
+	  visibility: hidden;
+	  position: relative;
+	}
+	.swipe-wrap {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.swipe-wrap > div {
+	  float:left;
+	  width:100%;
+	  position: relative;
+	} 
+
+/* VIDEO__________________________________ */
+
+	.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+       
+

@@ -1,0 +1,52 @@
+header{
+	outline: 1px red solid;
+	height:500px;
+	line-height: 500px;
+	overflow: hidden
+}
+
+#title{
+	font-size: 15em;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-animation: letters_across 3s linear infinite alternate;
+	animation: letters_across 3s linear infinite alternate;
+}
+
+
+nav ul{
+	list-style: none;
+	text-indent: 0;
+	text-align: center;
+}
+
+nav li{
+	display: inline;
+	text-indent: 0;
+	margin: 0 1em;
+}
+
+@keyframes letters_across {
+  from {
+    color:red;
+    left:500px;
+  }
+  to {
+    color:blue;
+    right:500px;
+  }
+}
+
+@-webkit-keyframes letters_across {
+  from {
+    color:red;
+    left:1200px;
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    color:blue;
+    left:-1200px;
+    -webkit-transform: rotate(90deg);
+  }
+}

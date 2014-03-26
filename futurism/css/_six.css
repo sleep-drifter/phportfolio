@@ -1,0 +1,104 @@
+.animation_playground{ height:100%;/*overflow: hidden;*/}
+span{text-align: left;
+  font-size:40em;
+  letter-spacing: -0.5em;
+  position:absolute;
+  display: inline-block;
+  width:500px;
+  line-height: 500px;
+  height:500px;
+  top:20%;
+  right:20%;
+  -webkit-animation: energy 1s ease infinite normal;
+  -moz-animation: energy 1s ease infinite normal;
+  -o-animation: energy 1s ease infinite normal;
+  animation: energy 1s ease infinite normal;
+}
+
+  @-webkit-keyframes energy {
+  0% {
+    left:0;
+  }
+  50% {
+    left:400px;
+  }
+  100% {
+    left:0px;
+  }
+}
+
+ @-moz-keyframes energy {
+  0% {
+    left:0;
+  }
+  50% {
+    left:400px;
+  }
+  100% {
+    left:0px;
+  }
+}
+
+ @-o-keyframes energy {
+  0% {
+    left:0;
+  }
+  50% {
+    left:400px;
+  }
+  100% {
+    left:0px;
+  }
+}
+
+ @keyframes energy {
+  0% {
+    left:0;
+  }
+  50% {
+    left:400px;
+  }
+  100% {
+    left:0px;
+  }
+}
+
+.animation_playground>span:nth-child(2){
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  color:white;
+  font-size: 50em;
+  letter-spacing: -0.25em;
+
+}
+.animation_playground>span:nth-child(3){
+  -webkit-animation-duration: 2000ms;
+  -moz-animation-duration: 2000ms;
+  -o-animation-duration: 2000ms;
+  animation-duration: 2000ms;  
+  opacity: 0.2;
+  letter-spacing: -0.52em;
+  }
+.animation_playground>span:nth-child(4){
+  -webkit-animation-duration: 16000ms;
+  -moz-animation-duration: 16000ms;
+  -o-animation-duration: 16000ms;
+  animation-duration: 16000ms;  
+  color:red;
+}
+.animation_playground>span:nth-child(5){
+  -webkit-animation-duration: 17000ms;
+  -moz-animation-duration: 17000ms;
+  -o-animation-duration: 17000ms;
+  animation-duration: 17000ms; 
+}
+.animation_playground>span:nth-child(2n+1){
+-webkit-animation-direction: reverse;
+-moz-animation-direction: reverse;
+-o-animation-direction: reverse;
+animation-direction: reverse;
+
+}
+

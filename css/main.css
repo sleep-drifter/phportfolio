@@ -1,0 +1,493 @@
+#top{
+  display: none;
+}
+#canvascontainer{
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#background{
+	padding:40px 0;
+	background-color: #333;
+}
+
+#wip{
+  text-align: center;
+  font-family: "soleil",sans-serif;
+  margin: 30px auto 15px auto;
+  font-size: 20px;
+  font-weight: 100;
+  color:#555;
+}
+
+#wip h1, h2{
+  margin: 5px auto;
+}
+  canvas { 
+    display: inline-block;
+    outline: 0px; 
+    margin: 10px auto -5px auto; 
+    text-align:center;
+  }
+
+.container hr{
+  margin:40px 0;
+}
+#hider{
+  background:#333;
+  max-width: 250px;
+  height:20px;
+  background-color: #fff;
+  margin:-10px auto -15px auto;
+  z-index: 100!important;
+}
+#spacer{
+  max-width: 200px;
+  height:2px;
+  background-color: #fff;
+  margin: 10px auto 30px auto;
+  z-index: 1 !important;
+}
+
+
+img {
+  max-width: 100%;
+}
+/*-------   Header   ------------------------------------------*/
+
+header img{
+  margin: 30px auto 10px auto;
+  width: 200px;
+  display: block;
+}
+
+header h1{
+  font-family: "rooney-web",sans-serif;
+font-style: italic;
+font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  margin:10px 0 -5px 0;
+  color:#444;
+}
+
+/*header h2{
+  font-family: 'calluna-sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:#939597;
+  font-weight: 300;
+}*/
+
+/*-------   Navigation   ------------------------------------------*/
+nav ul{
+  text-align: center;
+  margin: 10px 0;
+}
+nav ul li{
+  display: inline-block;
+  margin: 3px 5px;
+}
+
+nav a, footer a{
+  position: relative;
+  font-family: "soleil",sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color:#aaa;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 1px;
+  transition:0.3s all;
+}
+footer a{
+  border-bottom: none;
+  padding-bottom: 0px;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+}
+
+nav a:hover, footer a:hover{
+  opacity: 0.7;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  }
+
+footer a:hover{
+  background-color: #aaa;
+  color:#fff !important;
+}
+
+.active_link{
+  color:#333;
+  border:none;
+}
+
+
+
+/*-------   Button   ------------------------------------------*/
+
+/*.button{
+  position:relative;
+  width:150px;
+  color:#FFF;
+  display:block;
+  text-decoration:none;
+  margin:0 auto;
+  border-radius:5px;
+  border:solid 1px #D94E3B;
+  background:#cb3b27;
+  text-align:center;
+  padding:10px 10px;
+  
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  
+  -webkit-box-shadow: 0px 5px 0px #84261a;
+    -moz-box-shadow: 0px 5px 0px #84261a;
+    box-shadow: 0px 5px 0px #84261a;
+}
+.button:active{
+  -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    background-color: #c43426;
+    position:relative;
+    top:2px;
+}
+
+.b2{
+  background:#00adef;
+  border:solid 1px #08bdf4;
+  -webkit-box-shadow: 0px 5px 0px #1b75bb;
+  -moz-box-shadow: 0px 5px 0px #1b75bb;
+  box-shadow: 0px 5px 0px #1b75bb;
+
+}
+
+.b2:active{
+  -webkit-box-shadow: 0px 2px 0px #08bdf4;
+    -moz-box-shadow: 0px 2px 0px #08bdf4;
+    box-shadow: 0px 2px 0px #08bdf4;
+    background-color: #05a4d6;
+
+}
+
+.button:hover{
+  background-color:#D94E3B;
+}
+.b2:hover{
+  background-color:#08bdf4;
+}*/
+
+
+/*-------   Section Descriptions   ------------------------------------------*/
+
+div.regular_text{
+  margin-top: 20px;
+}
+
+.regular_text h1{
+  font-family: "rooney-web",sans-serif;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 10px;
+    margin-top: 10px;
+  font-size: 22px;
+  color:#999;
+}
+
+.regular_text p{
+  font-family: "ff-dagny-web-pro",sans-serif;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+nav + .container{
+  margin: 10px auto 0 auto;
+}
+figure{
+  margin: 0 0 10px 0;
+}
+
+.row figure>img{
+  margin: 0 auto;
+  display: block;
+}
+.description{
+  text-align: center;
+  margin: 10px 0 20px 0;
+  
+  color:#999;
+}
+.description h1{
+  font-family: "rooney-web",sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.description h2{
+  font-size: 14px;
+  font-family: "soleil",sans-serif;
+  color: #666;
+  font-weight: 300;
+  margin: 5px 0 0 0;
+  letter-spacing: 1px;
+}
+
+a>figure{cursor: default;}
+#work figcaption{
+  cursor: pointer;
+}
+
+#work img{
+  cursor: pointer;
+  transition:0.3s all;
+  -moz-transition:0.3s all;
+}
+
+#work{
+	background: #333;
+	padding: 40px 0;
+}
+
+#design-usfca{
+  background: url(../img/final/design-usfca.jpg);
+}
+
+#wwa{
+  background: url(../img/final/wwa.jpg);
+}
+
+#futurism{
+  background: url(../img/futurist.png);
+}
+
+
+#futurism:hover{
+  opacity: 0.7;
+}
+#dimension{
+  background: url(../img/final/dimension.png);
+}
+
+#evoba{
+  background: url(../img/final/evoba.jpg);
+}
+
+#gc{
+  background: url(../img/final/gc.jpg);
+}
+
+#nectar{
+  background: url(../img/final/nectar.jpg);
+}
+
+#idl:hover{
+  opacity: 0.7;
+}
+
+#idl{
+  background: url(../img/idl.png);
+}
+
+
+#khall{
+  background: url(../img/final/khall.jpg);
+}
+
+#revolver{
+  background: url(../img/final/revolver.png);
+}
+
+
+#reas{
+  background: url(../img/final/reas.png);
+}
+
+#bike-theft{
+  background: url(../img/final/bike-theft.jpg);
+}
+
+
+.project-display{
+  width: 200px;
+  height:160px;
+  margin: 0 auto;
+}
+
+.project-display:hover{
+  cursor: pointer;
+  background-position: 0px 160px !important;
+}
+
+
+.container{
+   -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+}
+/*-------   buttons   ------------------------------------------*/
+
+.btn-container{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  .button, .button-white{
+    font-size: 1.4rem;
+    font-size: 14px;
+    border: 1px solid #666;
+    transition:all 0.2s;
+    padding:10px 20px;
+    text-align: center;
+    color:#666;
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "soleil", sans-serif;
+    font-weight:300;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .button:hover{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    color:#666 !important;
+    text-decoration: none;
+  }
+
+  
+/*-------   Social Circles   ------------------------------------------*/
+.social span{width: 25px; height: 25px; display: block; margin: 7px auto 0 auto;}
+#linkedin{background-image: url(../img/social_sprite.png); background-position: 75px 0px;}
+#twitter{background-image: url(../img/social_sprite.png); background-position: 0px 0px;}
+#github{background-image: url(../img/social_sprite.png); background-position: 25px 0px;}
+#behance{background-image: url(../img/social_sprite.png); background-position: 50px 0px;}
+ 
+.social_circle li, ul.social_circle, .social span{
+     -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+ul.social_circle{
+  text-align: center;
+  margin: 20px 0 0 0;
+} 
+.social_circle li{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+  line-height: 44px;
+  text-align: center;
+  margin:0 10px;
+}
+
+.social_circle a{
+  color:white;
+  font-size: 18px;
+}
+
+.social_circle .button{
+  position:relative;
+  width:44px;
+  height: 44px;
+  border-radius:22px;
+  border:solid 1px #aaa;
+  background:#bbb;
+  text-align:center;
+  padding:0;
+  -webkit-box-shadow: 0px 5px 0px #999;
+  -moz-box-shadow: 0px 5px 0px #999;
+  box-shadow: 0px 5px 0px #999;
+}
+
+.social_circle .button:active{
+   -webkit-box-shadow: 0px 2px 0px #999;
+    -moz-box-shadow: 0px 2px 0px #999;
+    box-shadow: 0px 2px 0px #999;
+     /* Safari and Chrome */
+    position:relative;
+    top:2px;
+  }
+
+.social_circle a:hover{
+  background: #888;
+}
+
+
+
+/*-------   Individual Projects   ------------------------------------------*/
+#project_pics figure{
+  margin: 20px auto;
+  text-align: center;
+}
+
+#project_pics img,#project_pics span{
+  margin: 0 auto;
+
+  max-width: 100%;
+}
+#project_pics figcaption{
+  font-family: "soleil",sans-serif;
+  margin: 10px auto 0 auto;
+}
+
+#project_pics .row:last-child{
+  margin-bottom: 60px;
+}
+
+/*-------   Footer   ------------------------------------------*/
+footer{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "ff-dagny-web-pro",sans-serif;
+  color:#999;
+  font-weight: 300;
+  margin: 0 0 50px 0;
+}
+
+footer .button{
+    width:150px;
+
+}
+
+
+/*-------   Media Queries   ------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.social_circle .button{
+  position:relative;
+  width:60px;
+  height: 60px;
+  border-radius:30px;
+ }
+
+.social span{width: 25px; height: 25px; display: block; margin: 15px auto 0 auto;}
+
+.social_circle li{margin: 0px 25px;}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Stereo</title>
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:100,300,400,700,900,300italic,400italic,700italic|Poiret+One|Gravitas+One|Quicksand:300,400,700|Flamenco:300,400|Wire+One|Limelight|Fredoka+One|Roboto:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,100,300,700|Comfortaa:400,300,700|Abril+Fatface|Stint+Ultra+Expanded|Raleway:400,100,200,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Serifs and Other Decorative Fonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Playfair+Display:400,700,900,400italic,700italic,900italic|PT+Serif:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Oswald:400,300,700|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<script type="text/javascript" src="_js/html5_shiv.js"></script>
+  	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+  	<meta name="author" content="Matt Wujek - Gallery Project" />
+	<meta name="keywords" content="Matt Wujek gallery project usfca san francisco graphic web design student" />
+	<meta name="description" content="Web Design Project for ART 315 - Digital Literacy" />
+
+
+ 
+
+    </head>
+
+  <body id="top">
+    <div class="container">
+    	<header class="full_bleed">
+    		<h1 class="raleway  w700" style=""><a href="index.html">NOT FINISHED YET! Click to return!</a></h1>
+    	</header>
+    	
+	</section>
+</div>
+
+<!-- This accordion code was taken from Ryan Stemkoski @@stemkoski
+    Thanks Ryan!
+
+    More info can be link at the link below:
+    http://www.stemkoski.com/stupid-simple-jquery-accordion-menu/ -->
+
+    <script>
+		    $(document).ready(function() {
+			 
+			//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+			$('.accordionButton').click(function() {
+
+				//REMOVE THE ON CLASS FROM ALL BUTTONS
+				$('.accordionButton').removeClass('on');
+				  
+				//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+			 	$('.accordionContent').slideUp('normal');
+		   
+				//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+				if($(this).next().is(':hidden') == true) {
+					
+					//ADD THE ON CLASS TO THE BUTTON
+					$(this).addClass('on');
+					  
+					//OPEN THE SLIDE
+					$(this).next().slideDown('normal');
+				 } 
+				  
+			 });
+			  
+			
+			/*** REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+			
+			//ADDS THE .OVER CLASS FROM THE STYLESHEET ON MOUSEOVER 
+			$('.accordionButton').mouseover(function() {
+				$(this).addClass('over');
+				
+			//ON MOUSEOUT REMOVE THE OVER CLASS
+			}).mouseout(function() {
+				$(this).removeClass('over');										
+			});
+			
+			/*** END REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+			
+			
+			/********************************************************************************************************************
+			CLOSES ALL S ON PAGE LOAD
+			********************************************************************************************************************/	
+			$('.accordionContent').hide();
+
+		});
+	</script>
+	<!--Devin Sturgeon - http://www.devinsturgeon.com/
+	Smooth scrolling code via CSS Tricks - Scrolling Article: http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+
+	<script>
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+	</script>
+
+  </body>
+</html>

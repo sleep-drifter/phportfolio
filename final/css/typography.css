@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Raleway+Dots|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.railway{font-family: 'Raleway', sans-serif;}
+.railway_dots{font-family: 'Raleway Dots', sans-serif;}
+.source{font-family: 'Source Sans Pro', sans-serif;}
+
+
+/*.w100{font-weight: 100;}
+.w300{font-weight: 300;}
+.w500{font-weight: 500;}
+.w700{font-weight: 700;}
+.w900{font-weight: 900;}
+
+.k1{letter-spacing: 0.5px;}
+.k2{letter-spacing: 1px;}
+.k3{letter-spacing: 1.5px;}
+.k4{letter-spacing: 2px;}
+.k5{letter-spacing: 2.5px;}*/
+
+.caps{text-transform: uppercase;}
+.italics{font-style: italic;}
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+
+
+
+

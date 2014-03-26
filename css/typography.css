@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic,700italic,900italic|Montserrat:400,700);
+
+
+.mont{font-family: 'Montserrat', serif;}
+.source{font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.w100{font-weight: 100;}
+.w300{font-weight: 300;}
+.w500{font-weight: 500;}
+.w700{font-weight: 700;}
+.w900{font-weight: 900;}
+
+.k1{letter-spacing: 0.5px;}
+.k2{letter-spacing: 1px;}
+.k3{letter-spacing: 1.5px;}
+.k4{letter-spacing: 2px;}
+.k5{letter-spacing: 2.5px;}
+
+.caps{text-transform: uppercase;}
+.italics{font-style: italic;}
+
+
+
+
+

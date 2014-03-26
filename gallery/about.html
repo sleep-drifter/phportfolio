@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dimension</title>
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:100,300,400,700,900,300italic,400italic,700italic|Poiret+One|Gravitas+One|Quicksand:300,400,700|Flamenco:300,400|Wire+One|Limelight|Fredoka+One|Roboto:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Slab:400,100,300,700|Comfortaa:400,300,700|Abril+Fatface|Stint+Ultra+Expanded|Raleway:400,100,200,300,600,700,800,900,500' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Serifs and Other Decorative Fonts-->
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Playfair+Display:400,700,900,400italic,700italic,900italic|PT+Serif:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Oswald:400,300,700|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<script type="text/javascript" src="_js/html5_shiv.js"></script>
+  	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+  	<meta name="author" content="Matt Wujek - Gallery Project" />
+	<meta name="keywords" content="Matt Wujek gallery project usfca san francisco graphic web design student" />
+	<meta name="description" content="Web Design Project for ART 315 - Digital Literacy" />
+
+
+ 
+
+    </head>
+ <script>
+  	$(document).ready(function() {
+    $('#all').fadeIn(800);
+	});
+</script>
+  <body>
+    <div class="container" id="all">
+    	<header>
+    		<h1 class="raleway w700" style="margin: 1em auto; max-width:430px;"><a href="index.html">DIMENSION</a></h1>
+    	</header>
+    	<div id="top_img" class="full columns" style="width:100%; overflow:hidden; ">
+    		<img src="images/about.png">
+    		</div>
+	    	<nav class="roboto w300">
+	    		<ul class="full columns">
+	    			<li class="two columns"><a href="index.html">Home</a></li>
+	    			<li class="two columns active"><a href="#">About</a></li>
+	    			<li class="two columns accordionButton"><a>Artists</a></li>
+		    			<ul class="accordionContent">
+							<li><a href="macdonald.html">Chrissie MacDonald</a></li>
+							<li><a href="mcpharlin.html">Dan McPharlin</a></li>
+							<li><a href="schacke.html">Katrin Schacke</a></li>
+							<li><a href="smith.html">Dan Tobin Smith</a></li>
+							<li><a href="underware.html">Underware</a></li>
+							<li><a href="vallee.html">Jullien vallee</a></li>
+
+						</ul>
+	    			<li class=" columns"><a href="../index.php">Back to Portfolio</a><img src="arrow.png"></li>
+
+	    		</ul>
+
+	    	</nav>
+
+	    		
+	<br class="clear" />
+
+
+	<section>
+
+			<p class="merriweather nine columns w300 main" style="font-size:1.25em; text-indent:2em; margin: 2em auto;">Dimension is an virutal exhibition that brings together a modest collection of work from an eclectic group of fine artists, illustrators, photographers, designers, typographers, and art directors who push the limits of their work outside of the computer interface. Although all have different styles and aesthetic sensibilities, they they are all makers who create tactile items that carry far greater impact and emotion than that of their backlit counterparts. Dimension celebrates the creation of engaging ephemeral artwork—something that will live in the hearts and minds of the viewer, a concrete creation that occupies a time and space with a story to share.
+			</p>
+
+		<br class="clear" />
+		<hr style="margin:1em 0 2em 0;">
+
+		<section id="artists">
+			<a href="macdonald.html"><div id="macdonald" class="artist_box three columns">Chrissie MacDonald</div></a>
+			<a href="mcpharlin.html"><div id="mcpharlin" class="artist_box three columns">Dan McPharlin</div></a>
+			<a href="schacke.html"><div id="schacke" class="artist_box three columns">Katrin Schacke</div>			<a href="smith.html"><div id="smith" class="artist_box three columns">Dan Tobin Smith</div></a>
+			<a href="underware.html"><div id="underware" class="artist_box three columns">Underware</div></a>
+			<a href="vallee.html"><div id="vallee" class="artist_box three columns">Jullien vallee</div></a>
+		</section>
+			
+			<br class="clear" />
+		<footer class="three columns raleway w600"><a href="#top">Back to Top</a></footer>
+
+	</section>
+</div>
+
+<!-- This accordion code was taken from Ryan Stemkoski @@stemkoski
+    Thanks Ryan!
+
+    More info can be link at the link below:
+    http://www.stemkoski.com/stupid-simple-jquery-accordion-menu/ -->
+
+    <script>
+		    $(document).ready(function() {
+			 
+			//ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+			$('.accordionButton').click(function() {
+
+				//REMOVE THE ON CLASS FROM ALL BUTTONS
+				$('.accordionButton').removeClass('on');
+				  
+				//NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+			 	$('.accordionContent').slideUp('normal');
+		   
+				//IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+				if($(this).next().is(':hidden') == true) {
+					
+					//ADD THE ON CLASS TO THE BUTTON
+					$(this).addClass('on');
+					  
+					//OPEN THE SLIDE
+					$(this).next().slideDown('normal');
+				 } 
+				  
+			 });
+			  
+			
+			/*** REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+			
+			//ADDS THE .OVER CLASS FROM THE STYLESHEET ON MOUSEOVER 
+			$('.accordionButton').mouseover(function() {
+				$(this).addClass('over');
+				
+			//ON MOUSEOUT REMOVE THE OVER CLASS
+			}).mouseout(function() {
+				$(this).removeClass('over');										
+			});
+			
+			/*** END REMOVE IF MOUSEOVER IS NOT REQUIRED ***/
+			
+			
+			/********************************************************************************************************************
+			CLOSES ALL S ON PAGE LOAD
+			********************************************************************************************************************/	
+			$('.accordionContent').hide();
+
+		});
+	</script>
+	<!--Devin Sturgeon - http://www.devinsturgeon.com/
+	Smooth scrolling code via CSS Tricks - Scrolling Article: http://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+
+	<script>
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+	</script>
+
+  </body>
+</html>

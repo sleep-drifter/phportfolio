@@ -1,0 +1,350 @@
+#all{display: none;}
+header{
+	background-color: #000;
+	height:500px;
+	width: 100%;
+	line-height: 500px;
+	overflow: hidden;
+	position: relative;
+
+
+}
+header+h1{
+	text-align: center;
+	font-size: 5em;
+	margin: 0.5em auto 0 auto;
+	color:#000;
+	letter-spacing: 1px;
+
+}
+
+.container header>h1{
+  text-align: center;
+}
+
+.animation_playground{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+}
+
+/*----  SIDEBAR AND LOGO  --------------------------------------------------------------------
+*/
+#sidewrap{
+  visibility: hidden;
+}
+
+#logo:hover{
+	opacity: 0.9;
+
+}
+.sidebar{
+	position: fixed;
+	left:23px;
+  opacity: 0.4;
+}
+
+#logo{
+	margin: 0;
+	padding:0;
+	height:100px;
+	line-height: 100px;
+	font-size: 3em;
+	text-align: center;
+	width:100px;
+	position: fixed;
+	z-index: 100;
+	left:-20px;
+  top:-10px;
+
+}
+
+.sidebar.small{
+	width:45px;
+	height:40px;
+}
+
+
+.sidebar.small.active{
+	background-color: #ddd;
+}
+
+.sidebar.small:hover{
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+  left:26px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sidebar.small a:active{
+	position: relative;
+	right:2px;
+}
+
+
+#home{
+	top:150px;
+	background-image: url(../images/sidebar_icons.png);
+	background-position: 10px -33px;
+	background-repeat: no-repeat;
+
+}
+#info{
+	top:200px;
+	background-image: url(../images/sidebar_icons.png);
+	background-position: 10px 8px;
+	background-repeat: no-repeat;
+
+}
+
+#pages{
+	position: fixed;
+	top:250px;
+	background-image: url(../images/sidebar_icons.png);
+	background-position: 10px -73px;
+	background-repeat: no-repeat;
+}
+
+/*----  SIDEBAR AND LOGO  --------------------------------------------------------------------
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+#sidewrap div{visibility: visible;}
+#logo{top:0; left:0px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+#sidewrap div{visibility: visible;}
+#logo{top:0; left:0px;}
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+#sidewrap{visibility: visible;}
+#logo{top:0; left:0px;}
+
+ }
+
+
+
+
+
+
+
+
+
+.title{
+	font-size: 15em;
+	position: absolute;
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+	-webkit-animation: letters_across 2s linear infinite normal;
+
+}
+
+nav ul{
+	list-style: none;
+	text-indent: 0;
+	text-align: center;
+	margin: 1em 0;
+}
+
+nav li{
+	display: inline;
+	text-indent: 0;
+	margin: 0 1em;
+}
+
+
+/*============================ first animation ====================== 
+============================== first animation ====================== 
+============================== first animation ====================== 
+============================== first animation ======================*/ 
+@-webkit-keyframes letters_across {
+  from {
+    opacity:0.1;
+    color:white;
+    top:400px;
+    right:2000px;
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    opacity:1;
+    color:black;
+    top:-200px;
+    right:-1200px;
+    -webkit-transform: rotate(1000deg);
+  }
+}
+/*============================== second animation ====================== 
+============================== second animation ====================== 
+============================== second animation ====================== 
+============================== second animation ======================*/ 
+
+@-webkit-keyframes letters_across_a {
+  from {
+    opacity:0.1;
+    color:black;
+    top:0px;
+    right:2300px;
+    -webkit-transform: rotate(460deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:200px;
+    right:-1200px;
+    -webkit-transform: rotate(0deg);
+  }
+}
+/*============================== third animation ====================== 
+============================== third animation ====================== 
+============================== third animation ====================== 
+============================== third animation ====================== */
+
+@-webkit-keyframes letters_across_b {
+  from {
+    opacity:0.1;
+    color:black;
+    top:0px;
+    right:2200px;
+    -webkit-transform: rotate(550deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:-200px;
+    right:-1200px;
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+/*============================== fourth animation ====================== 
+============================== fourth animation ====================== 
+============================== fourth animation ====================== 
+============================== fourth animation ====================== */
+
+@-webkit-keyframes letters_across_c {
+  from {
+    opacity:0.1;
+    color:black;
+    top:0px;
+    right:1500px;
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:200px;
+    right:-1200px;
+    -webkit-transform: rotate(600deg);
+  }
+}
+
+/*============================== fifth animation ====================== 
+============================== fifth animation ====================== 
+============================== fifth animation ====================== 
+============================== fifth animation ====================== 
+*/
+@-webkit-keyframes letters_across_d {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-200px;
+    right:1800px;
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:0px;
+    right:-1200px;
+    -webkit-transform: rotate(560deg);
+  }
+}
+
+@-webkit-keyframes letters_across_e {
+  from {
+    opacity:0.1;
+    color:black;
+    top:500px;
+    right:1100px;
+    -webkit-transform: rotate(800deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:-500px;
+    right:-1200px;
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes letters_across_f {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-100px;
+    right:1800px;
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    opacity:1;
+    color:white;
+    top:100px;
+    right:-1200px;
+    font-size: 2em;
+    -webkit-transform: rotate(630deg);
+  }
+}
+header>span:nth-child(7n)  {-webkit-animation: letters_across   18s linear infinite normal;}
+header>span:nth-child(7n+1){-webkit-animation: letters_across_a 7s linear infinite normal;}
+header>span:nth-child(7n+2){-webkit-animation: letters_across_b 8s linear infinite normal;}
+header>span:nth-child(7n+3){-webkit-animation: letters_across_c 9s linear infinite normal;}
+header>span:nth-child(7n+4){-webkit-animation: letters_across_d 10s linear infinite normal;}
+header>span:nth-child(7n+5){-webkit-animation: letters_across_e 11s linear infinite normal;}
+header>span:nth-child(7n+6){-webkit-animation: letters_across_f 12s linear infinite normal;}
+
+header>span:nth-child(4n+1){-webkit-animation-duration: 13s; }
+
+header>span:nth-child(2n+2){opacity: 1;-webkit-animation-duration: 14s; }
+header>span:nth-child(3n+2){font-size:10em; opacity: 0.8;-webkit-animation-duration: 15s;}
+header>span:nth-child(4n+2){font-size:15em; opacity: 0.9;-webkit-animation-duration: 16s;}
+header>span:nth-child(5n+2){font-size:20em; opacity: 1;-webkit-animation-duration: 25s;}
+header>span:nth-child(6n+3){z-index:0; font-size:40em; opacity: 0.2; -webkit-animation-duration: 30s;}
+
+header>span.two_seconds{ font-size:5em;-webkit-animation-duration: 2s;}
+header>span.two_seconds1{ font-size:5em;-webkit-animation-duration: 1.5s;}
+header>span.two_seconds2{ font-size:5em;-webkit-animation-duration: 1s;}
+header>span.two_seconds3{ font-size:8em;-webkit-animation-duration: 2.5s;}
+header>span.two_seconds4{ font-size:10em;-webkit-animation-duration: 3s;}
+header>span.two_seconds5{ font-size:12em;-webkit-animation-duration: 3.5s;}
+header>span.two_seconds6{ font-size:15em;-webkit-animation-duration: 4s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

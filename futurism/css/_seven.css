@@ -1,0 +1,131 @@
+.animation_playground{ height:100%;/*overflow: hidden;*/}
+span{text-align: left;
+  font-size:20em;
+  position:absolute;
+  display: inline-block;
+  top:35%;
+  right:20%;
+  color:#45101C;
+  -webkit-animation: energy 1s ease infinite normal;
+  -moz-animation: energy 1s ease infinite normal;
+  -o-animation: energy 1s ease infinite normal;
+  animation: energy 1s ease infinite normal;
+}
+
+  @-webkit-keyframes energy {
+  0% {
+    left:0;
+    opacity: 0.8;
+  }
+  50% {
+    left:50px;
+    opacity: 0;
+  }
+  100% {
+    left:0px;
+     opacity: 0.8;
+  }
+}
+
+  @-moz-keyframes energy {
+  0% {
+    left:0;
+    opacity: 0.8;
+  }
+  50% {
+    left:50px;
+    opacity: 0;
+  }
+  100% {
+    left:0px;
+     opacity: 0.8;
+  }
+}
+
+
+  @-o-keyframes energy {
+  0% {
+    left:0;
+    opacity: 0.8;
+  }
+  50% {
+    left:50px;
+    opacity: 0;
+  }
+  100% {
+    left:0px;
+     opacity: 0.8;
+  }
+}
+
+
+  @keyframes energy {
+  0% {
+    left:0;
+    opacity: 0.8;
+  }
+  50% {
+    left:50px;
+    opacity: 0;
+  }
+  100% {
+    left:0px;
+     opacity: 0.8;
+  }
+}
+
+
+}
+.animation_playground>span:first-child{
+  -webkit-animation-direction:reverse;
+  -moz-animation-direction:reverse;
+  -webkit-animation-direction:reverse;
+  animation-direction:reverse;
+  color:#4B6841;
+  opacity: 0.7;
+}
+.animation_playground>span:nth-child(2){
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  color:#4B6841;
+}
+.animation_playground>span:nth-child(3){
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  color:#3E4893;
+  }
+.animation_playground>span:nth-child(4){
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  -o-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+    opacity: 0.5;
+    color:#91782D;
+
+}
+.animation_playground>span:nth-child(5){
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  opacity: 0.5;
+}
+.animation_playground>span:nth-child(6){
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.animation_playground>span:nth-child(2n){
+  -webkit-animation-direction:reverse;
+  -moz-animation-direction:reverse;
+  -o-animation-direction:reverse;
+  animation-direction:reverse;
+}
+
+

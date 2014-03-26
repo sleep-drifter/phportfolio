@@ -1,0 +1,785 @@
+
+.contact_info a, .backing a{  
+    color:#845722;
+    opacity: 0.7;
+    transition:0.3s opacity;
+    text-decoration: none;
+    border-bottom: 1px solid  #845722;
+    padding-bottom: 1px;
+}
+
+.contact_info a:hover,.backing a:hover{
+    opacity: 1;
+}
+body {
+    color: #ddd;
+    font-family: "calluna-sans" ,sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    min-height: 100%; 
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#top{
+    display: none;
+}
+
+p{
+    font-family: "calluna-sans" ,sans-serif;
+}
+
+.home_services{
+    font-family: "brandon-grotesque" !important,sans-serif;
+}
+
+h1{
+    font-family: "brandon-grotesque",sans-serif;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
+        #layout.active #menu {
+            left: 150px;
+            width: 150px;
+        }
+
+        #layout.active .menu-link {
+            left: 150px;
+        }
+/*
+The content `<div>` is where all your content goes.
+*/
+.main{
+    background: #eee;
+}
+.content {
+    margin: 0 auto;
+    background: #eee;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.header {
+    text-shadow: 0px 0px 5px #666;
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.2em 2em 0;
+     /*background-attachment:fixed;*/
+     background-position: 0 -200px;
+/*     border-bottom: 5px solid #eee;
+*/     font-family: "brandon-grotesque",sans-serif;
+     background-image: url(../../img/wwsplash3.jpg);
+     height:400px;
+ }
+    .header h1 {
+        margin: 2em 0 0.5em 0;
+        font-size: 3em;
+        font-weight: 500;
+        display: ;
+    }
+     .header ul {
+        font-weight: 300;
+        font-size: 24px;
+        color: #fff;
+        padding: 0;
+        margin-top: 0;
+        text-align: center;
+        list-style: none;
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
+}
+
+
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -150px; /* "#menu" width */
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    #menu a {
+        color: #999;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+    }
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: #333;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #1f8dd6;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+        font-size: 110%;
+        color: #fff;
+        margin: 0;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: #000;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #fff;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+.index_wrap{
+    position: relative;
+    transition:0.2s top;
+
+}
+
+.backing, .backing_img{
+    background: #fff;
+    padding-bottom:20px;
+    padding-top:20px;
+    color:#91776E;
+    margin: 40px auto;
+    max-width:800px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    position: relative;
+     -moz-box-shadow:    0px 0px 15px #ccc;
+     -webkit-box-shadow: 0px 0px 15px #ccc;
+     box-shadow:         0px 0px 15px #ccc;
+}
+.backing p, .backing_img p{
+    width: 90%;
+    padding: 0 40px; 
+}
+.linkbutton{
+    padding:5px 10px;
+    color:#C27F5D;
+    border: 1px #EAC586 solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.8;
+    transition:all 0.3s;
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+.linkbutton:hover{
+    opacity: 1;
+    background: #EAC586;
+}
+.back2top{
+    text-align: center;
+    margin: 20px auto;
+
+
+
+
+}
+
+.backing h1{
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    padding:20px 0;
+    text-transform:capitalize;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background: #EAC586;
+    color:#91776E;
+}
+.backing_img{
+    position: relative;
+    top:-48px;
+}
+.content_img{
+    width:800px;
+    position: relative;
+    top:0px;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+.place_pics{
+    position: relative;
+    margin: 0;
+}
+.place{
+    position: absolute;
+    left:35%;
+    width: 220px;
+    top:-195px;
+
+}
+.head_info{
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.header{
+    color:#fff;
+    font-weight: 500;
+}
+footer{
+    font-family: "brandon-grotesque", sans-serif;
+    width: 100%;
+    background: #4C4948;
+    text-align: center;
+    height: 100px;
+    color:#fff;
+    padding:40px 0px 15px 0;
+    
+}
+footer ul{
+    text-align: center;
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+    text-indent: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+}
+footer li{
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0px 10px;
+
+}
+ footer a{
+    text-decoration: none;
+    color:#EAC586;
+
+ }
+
+ footer p, footer p a{
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: -7px;
+ }
+
+ footer a{
+    opacity: 0.7;
+    transition:all 0.3s;
+ }
+
+ footer a:hover{
+    opacity: 1.0;
+ }
+/*        NAVIGATION
+*/  .title{
+    background: #D17A44;
+    color:#EAC586;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    text-decoration: none;
+    margin: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 18px;
+    width: 220px;
+    font-family: "brandon-grotesque",sans-serif;
+    font-weight: 300;
+    transition:all 0.3s;
+    text-transform: uppercase;
+    display: inline-block;
+
+    -moz-box-shadow:    0px 0px 2px #333;
+     -webkit-box-shadow: 0px 0px 2px #333;
+     box-shadow:         0px 0px 2px #333;
+}
+
+.services_hero{
+    height: 100%;
+    padding: 10px 0px;
+    width: 100%;
+    top:0;
+    position: relative;
+    background:url(../../img/wwsplash3.jpg);
+}
+
+.services_info{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.title:hover{
+    background: #C16B3A;
+    
+}
+
+.title span{
+    color:#fff;
+}
+        .button {
+    background:none;
+    position: relative;
+    padding: 15px 24px;
+    color: #BF9771;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "brandon-grotesque",sans-serif;
+    font-weight: 300;
+    margin: 0 10px;
+    transition:all 0.3s;
+    text-transform: uppercase;
+
+    display: inline-block;
+        padding: 20px 10px;
+
+}
+.btngroup{
+    position: relative;
+    text-align: center;
+}
+.button:hover, .active{
+    color:#845722;
+}
+
+.fb_button{
+    position: relative;
+    width:30px;
+    padding: 0;
+    top: 7px;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    opacity: 0.3;
+    opacity: 0;
+    transition:all 0.3s;
+    background-image: url(../../img/fb.png);
+}
+
+.fb_button:hover{
+    opacity: 0.7;
+
+
+}
+
+nav{
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    /*background-color: #D17A44;*/
+    text-align: left;
+    vertical-align: text-top;
+    letter-spacing: 2px;
+    padding-left: 0px;
+    z-index: 100;
+    border-bottom: 1px solid #D17A44;
+    transition: all 0.3s;
+    -moz-box-shadow:    0px 2px 25px #aaa;
+     -webkit-box-shadow: 0px 2px 25px #aaa;
+     box-shadow:         0px 2px 25px #aaa;
+
+}
+
+.fixed{
+
+}
+
+.fixed .title{
+    top:0 !important;
+    opacity: 1;
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    border:none;
+}
+
+
+#counter_vertical{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100px;
+    height: 100px;
+    z-index: 10000;
+    background: white;
+}
+
+.fixed_adj{
+    padding-top: 80px !important;
+}
+/*        Contact PAGE
+*/
+
+
+.contact_hero{
+    width: 100%;
+    top:0;
+    height: 200%;
+
+    position: relative;
+    background:url(../../img/wwsplash3.jpg);
+}
+.conditions-treated span{
+    color:#D17A44;
+    font-weight: 500;
+}
+
+.conditions-treated ul{
+    list-style: none;
+    margin: 10px 0;
+}
+.conditions-treated li{
+margin: 10px 0;
+}
+
+.about_section{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about_hero img{
+    margin: 0px auto -40px 0;
+    padding: 0;
+}
+.about_section h2{
+    padding: 0;
+    font-size: 32px;
+    font-size: 500;
+}
+
+.about_section li{
+    font-size: 22px;
+    font-size: 300;
+}
+
+.contact_info ul, .about_hero ul{
+    list-style: none;
+    text-indent: 0;
+    padding: 0;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.contact_info h2{
+    text-align: center;
+   
+}
+.home_services h2{
+ font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color:#D17A44;
+}
+.home_services ul{
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.home_services{
+    font-family: 'brandon-grotesque',sans-serif;
+}
+.home_services .pure-u-1-2{
+    margin-bottom: 40px;
+}
+.contact_info{
+    padding:20px 0 30px 0;
+    max-width: 600px;
+}
+
+.news_hero{
+    height: 300px;
+    line-height: 220px;
+    letter-spacing: 2px;
+    font-size: 32px;
+    color:#fff;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    background:url(../../img/wwsplash3.jpg);
+    background-position: 0px -400px;
+    text-shadow: 0px 0px 5px #666;
+}
+
+.about_hero{
+    text-shadow: 0px 0px 5px #666;
+    height: 100%;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    background:url(../../img/wwsplash3.jpg);
+    background-position: 0px -200px;
+
+}
+
+/*#accordion h2{
+    text-transform: uppercase;
+    outline: none;
+    color:#D17A44;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0.6;
+    position: relative;
+    padding: 20px 0;
+    transition:all 0.3s;
+    border-bottom: 1px solid #D17A44;
+
+}*/
+
+#accordion div{
+    padding: 30px;
+    position: relative;
+    background-color: #eee;
+}
+#accordion div h4{
+    font-size: 18px;
+    font-weight: 700;
+    color:#D17A44;
+
+}
+
+
+#accordion p{
+    font-size: 18px;
+}
+
+.ui-accordion-header:hover{
+    opacity: 1;
+    left:-5px;
+}
+.ui-accordion-header{
+    transition: 0.3s all;
+    text-transform: uppercase;
+    outline: none;
+    color:#D17A44;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0.5;
+    position: relative;
+    padding: 20px 0;
+    transition:all 0.3s;
+    padding-left:0;
+    border-bottom: 1px solid #D17A44;
+}
+.ui-accordion-header.ui-state-active {
+    transition: 0.3s all;
+    padding-left:70px;
+    border-color: #ccc;
+    opacity: 1;
+}
+
+.ui-accordion-header.ui-state-active:hover {
+    left:0px;
+    cursor: default;
+}
+
+#accordion{
+    padding: 0 40px;
+}
+
+
+.news h2{
+    color:#D17A44;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color:#D17A44;
+}
+
+.push-link-down{
+    position: absolute;
+    top:-10px;
+    width:20px;
+    height:20px;
+    visibility: hidden;
+    background-color:red;
+}
+
+
+.backing img{max-width: 80%; display: block; margin: 0 auto 40px auto; }
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #layout {
+       /* padding-left: 150px; left col width "#menu" */
+        left: 0;
+        background: #eee;
+        
+    }
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+
+    .fb_button{
+        left:153px;
+        display: inline-block;
+    }
+
+    .pushBottom{
+        bottom: 0;
+        position: fixed;
+    }
+    .contact_hero{
+        min-height: 800px;
+    }
+}
+

@@ -1,0 +1,80 @@
+header{background-color: #fff; height:100%;}
+header>span.two_seconds{
+  -webkit-animation: straight 2s linear infinite normal;
+  -moz-animation: straight 2s linear infinite normal;
+  -0-animation: straight 2s linear infinite normal;
+  animation: straight 2s linear infinite normal;
+  
+}
+
+	@-webkit-keyframes straight {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-100px;
+    right:1800px;
+    -webkit-transform: rotate(90deg);
+  }
+  to {
+    opacity:0.2;
+    color:white;
+    top:100px;
+    right:-1200px;
+    font-size: 2em;
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@keyframes straight {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-100px;
+    right:1800px;
+ transform: rotate(90deg);
+  }
+  to {
+    opacity:0.2;
+    color:white;
+    top:100px;
+    right:-1200px;
+    font-size: 2em;
+ transform: rotate(90deg);
+  }
+}
+
+@-o-keyframes straight {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-100px;
+    right:1800px;
+ -o-transform: rotate(90deg);
+  }
+  to {
+    opacity:0.2;
+    color:white;
+    top:100px;
+    right:-1200px;
+    font-size: 2em;
+ -o-transform: rotate(90deg);
+  }
+}
+
+@-moz-keyframes straight {
+  from {
+    opacity:0.1;
+    color:black;
+    top:-100px;
+    right:1800px;
+ -moz-transform: rotate(90deg);
+  }
+  to {
+    opacity:0.2;
+    color:white;
+    top:100px;
+    right:-1200px;
+    font-size: 2em;
+ -moz-transform: rotate(90deg);
+  }
+}
