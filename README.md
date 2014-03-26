@@ -8,5 +8,5 @@
 - add and update blog
 
 ## Finished
-~ integrate php ~
-~ update copy ~
+- ~~ integrate php ~~
+- ~~ update copy ~~
