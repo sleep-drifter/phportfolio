@@ -5,6 +5,7 @@
 - PHP contact form (security)
 - Remove Bootstrap and update layout Pure Grids
 - update project images (photos of devices)
+- change title from 'student' to 'interaction designer'
 - update sitemap (rename Title sections)
 - make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
