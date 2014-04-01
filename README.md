@@ -2,10 +2,9 @@
 
 ## To do list
 
-- PHP contact form
+- PHP contact form (security)
 - Remove Bootstrap and update layout Pure Grids
-- ~~update project images~~
-- ~~add and update blog~~
+- update project images (photos of devices)
 - update sitemap (rename Title sections)
 - make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
