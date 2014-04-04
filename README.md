@@ -3,10 +3,10 @@
 ## To do list
 
 - Remove Bootstrap and update layout Pure Grids
-- change title from 'student' to 'interaction designer'
+- ~~change title from 'student' to 'interaction designer'~~
 - make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
-- figure out mamp x codekit live update
+- ~~figure out mamp x codekit live update~~
 - update pdf via .indd, update fonts on CV, and change verbage
 
 ## Finished
