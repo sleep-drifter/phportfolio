@@ -18,7 +18,7 @@
 
       <div class="col-sm-8 col-sm-offset-2 regular_text">
           <h1>Nectar Lounge</h1>
-            <p style="text-align:center;">Posters made for <a href="http://www.nectarlounge.com/" target="_blank">Nectar Lounge</a> from 2010-2013.
+            <p style="text-align:center;">Posters made fosssrz <a href="http://www.nectarlounge.com/" target="_blank">Nectar Lounge</a> from 2010-2013.
             </p>
       </div>
     </div> <!-- /end row -->
