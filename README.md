@@ -2,7 +2,6 @@
 
 ## To do list
 
-- Add Int. Design readings to blog.
 - Remove Bootstrap and update layout Pure Grids
 - make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
