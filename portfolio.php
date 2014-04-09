@@ -6,7 +6,6 @@
 
  -->
 
-<div id="spacer"> </div>
 
 <div id="background">
   <div class="container" id="work">

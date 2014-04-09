@@ -9,7 +9,7 @@
 
 #background{
 	padding:40px 0;
-	background-color: #333;
+	background: url(../img/dark_wall.png) fixed;
 }
 
 #wip{
@@ -20,16 +20,49 @@
   font-weight: 100;
   color:#555;
 }
+#blog-header{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "ff-dagny-web-pro", sans-serif;
+  text-indent: 45px;
+}
+
+.blog-roll{
+  margin: 10px 0px;
+}
+
+.blog-roll:after, #blog-header:after{
+  content:'';
+  display: block;
+  max-width:250px;
+  height:1px;
+  background: #ddd;
+  margin: 40px auto;
+
+}
+.blog-roll .post-title{
+  color:#333 !important;
+  font-weight: 700!important;
+  font-style: italic;
+}
+.blog-roll .date{
+  text-align: center;
+  font-family: 'soleil', sans-serif;
+  color:#bbb;
+  margin-top: -2px;
+  margin-bottom: 20px;
+}
 
 #wip h1, h2{
   margin: 5px auto;
 }
-  canvas { 
-    display: inline-block;
-    outline: 0px; 
-    margin: 10px auto -5px auto; 
-    text-align:center;
-  }
+canvas { 
+  display: inline-block;
+  outline: 0px; 
+  margin: 10px auto -5px auto; 
+  text-align:center;
+}
 
 .container hr{
   margin:40px 0;
@@ -64,8 +97,8 @@ header img{
 
 header h1{
   font-family: "rooney-web",sans-serif;
-font-style: italic;
-font-weight: 500;
+  font-style: italic;
+  font-weight: 500;
   font-size: 28px;
   text-align: center;
   margin:10px 0 -5px 0;
@@ -78,56 +111,56 @@ font-weight: 500;
   text-align: center;
   color:#939597;
   font-weight: 300;
-}*/
+  }*/
 
-/*-------   Navigation   ------------------------------------------*/
-nav ul{
-  text-align: center;
-  margin: 10px 0;
-}
-nav ul li{
-  display: inline-block;
-  margin: 3px 5px;
-}
-
-nav a, footer a{
-  position: relative;
-  font-family: "soleil",sans-serif;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color:#aaa;
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 1px;
-  transition:0.3s all;
-}
-footer a{
-  border-bottom: none;
-  padding-bottom: 0px;
-  border: 1px solid #aaa;
-  padding: 5px 10px;
-}
-
-nav a:hover, footer a:hover{
-  opacity: 0.7;
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  /*-------   Navigation   ------------------------------------------*/
+  nav ul{
+    text-align: center;
+    margin: 10px 0;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 3px 5px;
   }
 
-footer a:hover{
-  background-color: #aaa;
-  color:#fff !important;
-}
+  nav a, footer a{
+    position: relative;
+    font-family: "soleil",sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:#aaa;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 1px;
+    transition:0.3s all;
+  }
+  footer a{
+    border-bottom: none;
+    padding-bottom: 0px;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+  }
 
-.active_link{
-  color:#333;
-  border:none;
-}
+  nav a:hover, footer a:hover{
+    opacity: 0.7;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  footer a:hover{
+    background-color: #aaa;
+    color:#fff !important;
+  }
+
+  .active_link{
+    color:#333;
+    border:none;
+  }
 
 
 
-/*-------   Button   ------------------------------------------*/
+  /*-------   Button   ------------------------------------------*/
 
 /*.button{
   position:relative;
@@ -181,205 +214,221 @@ footer a:hover{
 }
 .b2:hover{
   background-color:#08bdf4;
-}*/
+  }*/
 
 
-/*-------   Section Descriptions   ------------------------------------------*/
+  /*-------   Section Descriptions   ------------------------------------------*/
 
-div.regular_text{
-  margin-top: 20px;
-}
+  div.regular_text{
+    margin-top: 20px;
+  }
 
-.regular_text h1{
-  font-family: "rooney-web",sans-serif;
-  text-transform: none;
-  letter-spacing: 1px;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 10px;
+  .regular_text h1{
+    font-family: "rooney-web",sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
     margin-top: 10px;
-  font-size: 22px;
-  color:#999;
-}
+    font-size: 22px;
+    color:#999;
+  }
 
-.regular_text p{
-  font-family: "ff-dagny-web-pro",sans-serif;
-  line-height: 22px;
-  margin-bottom: 10px;
-}
+  .regular_text p{
+    font-family: "ff-dagny-web-pro",sans-serif;
+    line-height: 22px;
+    text-indent: 45px;
+    margin-bottom: 10px;
+  }
 
-nav + .container{
-  margin: 10px auto 0 auto;
-}
-figure{
-  margin: 0 0 10px 0;
-}
+  nav + .container{
+    margin: 10px auto 0 auto;
+  }
+  figure{
+    margin: 0 0 10px 0;
+  }
 
-.row figure>img{
-  margin: 0 auto;
-  display: block;
-}
-.description{
-  text-align: center;
-  margin: 10px 0 20px 0;
-  
-  color:#999;
-}
-.description h1{
-  font-family: "rooney-web",sans-serif;
-  font-style: italic;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.description h2{
-  font-size: 14px;
-  font-family: "soleil",sans-serif;
-  color: #666;
-  font-weight: 300;
-  margin: 5px 0 0 0;
-  letter-spacing: 1px;
-}
-
-a>figure{cursor: default;}
-#work figcaption{
-  cursor: pointer;
-}
-
-#work img{
-  cursor: pointer;
-  transition:0.3s all;
-  -moz-transition:0.3s all;
-}
-
-#work{
-	background: #333;
-	padding: 40px 0;
-}
-
-#design-usfca{
-  background: url(../img/final/design-usfca.jpg);
-}
-
-#wwa{
-  background: url(../img/final/wwa.jpg);
-}
-
-#futurism{
-  background: url(../img/futurist.png);
-}
-
-
-#futurism:hover{
-  opacity: 0.7;
-}
-#dimension{
-  background: url(../img/final/dimension.png);
-}
-
-#evoba{
-  background: url(../img/final/evoba.jpg);
-}
-
-#gc{
-  background: url(../img/final/gc.jpg);
-}
-
-#nectar{
-  background: url(../img/final/nectar.jpg);
-}
-
-#idl:hover{
-  opacity: 0.7;
-}
-
-#idl{
-  background: url(../img/idl.png);
-}
-
-
-#khall{
-  background: url(../img/final/khall.jpg);
-}
-
-#revolver{
-  background: url(../img/final/revolver.png);
-}
-
-
-#reas{
-  background: url(../img/final/reas.png);
-}
-
-#bike-theft{
-  background: url(../img/final/bike-theft.jpg);
-}
-
-
-.project-display{
-  width: 200px;
-  height:160px;
-  margin: 0 auto;
-}
-
-.project-display:hover{
-  cursor: pointer;
-  background-position: 0px 160px !important;
-}
-
-
-.container{
-   -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  transition: all 0.8s;
-}
-/*-------   buttons   ------------------------------------------*/
-
-.btn-container{
-    width: 100%;
+  .row figure>img{
+    margin: 0 auto;
+    display: block;
+  }
+  .description{
     text-align: center;
     margin: 10px 0 20px 0;
+
+    color:#999;
   }
-  .button, .button-white{
-    font-size: 1.4rem;
+  .description h1{
+    font-family: "rooney-web",sans-serif;
+    font-style: italic;
     font-size: 14px;
-    border: 1px solid #666;
-    transition:all 0.2s;
-    padding:10px 20px;
-    text-align: center;
-    color:#666;
-    display: inline-block;
-    margin: 0;
-    margin-right: 5px;
-    text-decoration: none;
+    font-weight: 500;
     letter-spacing: 1px;
-    font-family: "soleil", sans-serif;
-    font-weight:300;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  }
+  .description h2{
+    font-size: 14px;
+    font-family: "soleil",sans-serif;
+    color: #666;
+    font-weight: 300;
+    margin: 5px 0 0 0;
+    letter-spacing: 1px;
   }
 
-  .button:hover{
-    border: 1px solid #ccc;
-    background-color: #eee;
-    color:#666 !important;
-    text-decoration: none;
+  a>figure{cursor: default;}
+  #work figcaption{
+    cursor: pointer;
   }
 
-  
+  #work img{
+    cursor: pointer;
+    transition:0.3s all;
+    -moz-transition:0.3s all;
+  }
+
+  #work{
+    background: url(../img/dark_wall.png) fixed;
+    padding: 40px 0;
+  }
+
+  #design-usfca{
+    background: url(../img/final/design-usfca.jpg);
+  }
+
+  #wwa{
+    background: url(../img/final/wwa.jpg);
+  }
+
+  #futurism{
+    background: url(../img/futurist.png);
+  }
+
+
+  #futurism:hover{
+    opacity: 0.7;
+  }
+  #dimension{
+    background: url(../img/final/dimension.png);
+  }
+
+  #evoba{
+    background: url(../img/final/evoba.jpg);
+  }
+
+  #gc{
+    background: url(../img/final/gc.jpg);
+  }
+
+  #nectar{
+    background: url(../img/final/nectar.jpg);
+  }
+
+  #idl:hover{
+    opacity: 0.7;
+  }
+
+  #idl{
+    background: url(../img/idl.png);
+  }
+
+
+  #khall{
+    background: url(../img/final/khall.jpg);
+  }
+
+  #revolver{
+    background: url(../img/final/revolver.png);
+  }
+
+
+  #reas{
+    background: url(../img/final/reas.png);
+  }
+
+  #bike-theft{
+    background: url(../img/final/bike-theft.jpg);
+  }
+
+
+  .project-display{
+    width: 200px;
+    height:160px;
+    margin: 0 auto;
+  }
+
+  .project-display:hover{
+    cursor: pointer;
+    background-position: 0px 160px !important;
+  }
+
+  figure.jobsquare{
+    opacity: 0;
+    transition:0.8s all !important;
+  }
+
+
+  .container{
+   -webkit-transition: all 0.8s;
+   -moz-transition: all 0.8s;
+   transition: all 0.8s;
+ }
+ /*-------   buttons   ------------------------------------------*/
+
+ .btn-container{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+.button, .button-white{
+  font-size: 1.4rem;
+  font-size: 14px;
+  border: 1px solid #666;
+  transition:all 0.2s;
+  padding:10px 20px;
+  text-align: center;
+  color:#666;
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "soleil", sans-serif;
+  font-weight:300;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.intro{
+  line-height:29px;
+  font-weight:300;
+  font-size:22px;
+  color:#fff;
+  text-indent: 45px;
+  font-family: "soleil",sans-serif;
+
+}
+
+.button:hover{
+  border: 1px solid #ccc;
+  background-color: #eee;
+  color:#666 !important;
+  text-decoration: none;
+}
+
+
 /*-------   Social Circles   ------------------------------------------*/
 .social span{width: 25px; height: 25px; display: block; margin: 7px auto 0 auto;}
 #linkedin{background-image: url(../img/social_sprite.png); background-position: 75px 0px;}
 #twitter{background-image: url(../img/social_sprite.png); background-position: 0px 0px;}
 #github{background-image: url(../img/social_sprite.png); background-position: 25px 0px;}
 #behance{background-image: url(../img/social_sprite.png); background-position: 50px 0px;}
- 
+
 .social_circle li, ul.social_circle, .social span{
-     -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  transition: all 0.8s;
+ -webkit-transition: all 0.8s;
+ -moz-transition: all 0.8s;
+ transition: all 0.8s;
 }
 
 ul.social_circle{
@@ -417,13 +466,13 @@ ul.social_circle{
 }
 
 .social_circle .button:active{
-   -webkit-box-shadow: 0px 2px 0px #999;
-    -moz-box-shadow: 0px 2px 0px #999;
-    box-shadow: 0px 2px 0px #999;
-     /* Safari and Chrome */
-    position:relative;
-    top:2px;
-  }
+ -webkit-box-shadow: 0px 2px 0px #999;
+ -moz-box-shadow: 0px 2px 0px #999;
+ box-shadow: 0px 2px 0px #999;
+ /* Safari and Chrome */
+ position:relative;
+ top:2px;
+}
 
 .social_circle a:hover{
   background: #888;
@@ -462,7 +511,7 @@ footer{
 }
 
 footer .button{
-    width:150px;
+  width:150px;
 
 }
 
@@ -477,17 +526,17 @@ footer .button{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-.social_circle .button{
-  position:relative;
-  width:60px;
-  height: 60px;
-  border-radius:30px;
- }
+  .social_circle .button{
+    position:relative;
+    width:60px;
+    height: 60px;
+    border-radius:30px;
+  }
 
-.social span{width: 25px; height: 25px; display: block; margin: 15px auto 0 auto;}
+  .social span{width: 25px; height: 25px; display: block; margin: 15px auto 0 auto;}
 
-.social_circle li{margin: 0px 25px;}
+  .social_circle li{margin: 0px 25px;}
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
- }
+}

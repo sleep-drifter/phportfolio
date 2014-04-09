@@ -23,8 +23,9 @@
 
   <nav>
     <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="contact.php">Contact</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="blog.php">Sketchbook</a></li>
+      <li><a href="contact.php">Bio</a></li>
     </ul>
   </nav>
 
