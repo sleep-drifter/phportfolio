@@ -2,7 +2,7 @@
 
 ## To do list
 
-- update nav (~~work, about~~, blog)
+- Add Int. Design readings to blog.
 - Remove Bootstrap and update layout Pure Grids
 - make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
