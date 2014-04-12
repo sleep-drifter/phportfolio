@@ -13,6 +13,6 @@
 
 ## L8r
 
-- Rewrite bio with insights from senior thesis interview sessions (specifically notes from Amy)
+- Rewrite bio with insights from senior thesis interview sessions (specifically notes from Amy & kathrin)
 - Update project images (photos of w/o devices)
 
