@@ -18,7 +18,8 @@
 
       <div class="col-sm-8 col-sm-offset-2 regular_text">
           <h1>Futurist Manifesto</h1>
-            <p>This was a project in <a href="http://instructian.com">Ian Pollock's</a> Digital Literacy class at University of San Francisco. We were asked to design a non-linear typographical interpretation of an artist manifesto. The assignment tasks were aimed to sharpen our web-font and css animation skills.</p>
+            <p>This website explores the Futurist Artist Manifesto, authored by  Italian poet Filippo Tommaso Marinetti, in a non-linear typographical interpretation.  <a href="http://instructian.com/">Ian Pollock</a>, design professor at University of San Francisco, assigned this project to sharpen our web-font and css animation skills. I created wireframes, mock-ups, and coded the website using jQuery, Bootstrap, and Typekit. The final deliverables were presented and critiqued in my web design class during the fall of 2013. </p>
+
             <p>You can <a href="futurism/index.html" target="_blank">view my project here</a>.</p>
             </p>
       </div>
