@@ -11,6 +11,14 @@
 	padding:40px 0;
 	background-color: #333;
 }
+#blog-header, .lead{
+  
+  font-family: "ff-tisa-web-pro";
+  margin-bottom: 30px;
+  color:#333;
+  font-size: 18px;
+  text-indent: 45px;
+}
 
 #wip{
   text-align: center;
@@ -20,7 +28,13 @@
   font-weight: 100;
   color:#555;
 }
-
+.intro{
+  color: #fff;
+font-family: "soleil";
+font-size: 25px;
+line-height: 30px;
+text-indent: 50px;
+}
 #wip h1, h2{
   margin: 5px auto;
 }
@@ -193,7 +207,6 @@ div.regular_text{
 .regular_text h1{
   font-family: "rooney-web",sans-serif;
   text-transform: none;
-  letter-spacing: 1px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 10px;
@@ -326,13 +339,45 @@ a>figure{cursor: default;}
   cursor: pointer;
   background-position: 0px 160px !important;
 }
+.blog-roll{
+  text-indent: 45px;
+}
 
+.blog-roll img{
+  margin: 25px auto;
+  text-align: center;
+  display: block;
 
+}
+.blog-roll:after{
+    content:'';
+  display: block;
+  max-width:250px;
+  height:1px;
+  background: #ddd;
+  margin: 40px auto;
+}
 .container{
    -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s;
+}/*-------   blog   ------------------------------------------*/
+
+.post-title{
+  color:#333 !important;
+  font-weight: 700;
+  font-style: italic;
 }
+
+.date{
+  text-align: center;
+  font-family: "soleil";
+color: #aaa;
+font-weight: 300;
+margin-top: -5px;
+margin-bottom: 20px;
+}
+
 /*-------   buttons   ------------------------------------------*/
 
 .btn-container{
