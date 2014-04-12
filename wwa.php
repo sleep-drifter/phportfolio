@@ -19,7 +19,14 @@
       <div class="col-sm-8 col-sm-offset-2 regular_text">
           <h1>Walla Walla Acupuncture</h1>
           <p>This site was designed in Spring of 2014 for a new acupuncture clinic in my hometown, Walla Walla, WA. I worked with Elena Mejia, LAc/FNP to construct a site with exceptional usability and clarity. The web features responsive layouts, an interactive service menu, and a blog page that is imported from an off-site content management system.</p>
-          <a href="http://wallawallaacupuncture.org/" target="_blank" class="button">view website </a>.</p>
+          
+      <!--     <ul class="project-info">
+          <li><span>Client:</span>  Elena Mejia, LAc, FNP</li>
+          <li><span>Date:</span> Spring 2014</li>
+          <li><span>Resources:</span> Pure.io, JQuery, Brandon Grotesque, Calluna Sans</li>
+          </ul> -->
+
+          <a href="http://wallawallaacupuncture.org/" target="_blank" class="button">view website </a>
             
           
       </div>

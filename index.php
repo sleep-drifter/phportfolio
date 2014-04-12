@@ -4,6 +4,8 @@
 
   <body id="top">
 <?php include 'header_nav.php'; ?>
+<?php include 'short-intro.php'; ?>
+
 <?php include 'portfolio.php'; ?>
 <?php include 'footer.php'; ?>
 

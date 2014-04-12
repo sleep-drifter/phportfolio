@@ -32,15 +32,16 @@
 
  -->
 <div class="container" id="project_pics">
+
   <div class="row">
     <figure class="col-sm-12">
         <span data-picture data-alt="Picture of Website Spread" data-class="img-responsive">
-            <span  data-src="img/top_lg.jpg" ></span>
-            <span  data-src="img/top_lg.jpg"     data-media="(min-width: 768px)" ></span>
-            <span  data-src="img/top_lg.jpg"      data-media="(min-width: 992px)" ></span>
+            <span  data-src="img/full_sm.jpg" ></span>
+            <span  data-src="img/full_md.jpg"     data-media="(min-width: 768px)" ></span>
+            <span  data-src="img/full_lg.jpg"      data-media="(min-width: 992px)" ></span>
             <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
             <noscript>
-                <img src="img/top_lg.jpg" class="img-responsive" alt="Picture of Website Spread">
+                <img src="img/full_lg.jpg" class="img-responsive" alt="Picture of Website Spread">
             </noscript>
         </span>
     </figure>
@@ -60,15 +61,16 @@
     </figure>
   </div>
 
-  <div class="row">
+
+    <div class="row">
     <figure class="col-sm-12">
         <span data-picture data-alt="Picture of Website Spread" data-class="img-responsive">
-            <span  data-src="img/full_sm.jpg" ></span>
-            <span  data-src="img/full_md.jpg"     data-media="(min-width: 768px)" ></span>
-            <span  data-src="img/full_lg.jpg"      data-media="(min-width: 992px)" ></span>
+            <span  data-src="img/top_lg.jpg" ></span>
+            <span  data-src="img/top_lg.jpg"     data-media="(min-width: 768px)" ></span>
+            <span  data-src="img/top_lg.jpg"      data-media="(min-width: 992px)" ></span>
             <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
             <noscript>
-                <img src="img/full_lg.jpg" class="img-responsive" alt="Picture of Website Spread">
+                <img src="img/top_lg.jpg" class="img-responsive" alt="Picture of Website Spread">
             </noscript>
         </span>
     </figure>

@@ -4,21 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Matt Wujek" />
     <meta name="keywords" content="Matt Wujek graphic design student San Francisco Walla interaction web ux user experience"/>
-	<meta name="description" content="Student Portfolio of Matt Wujek, visual designer residing in San Francisco."/>
+	<meta name="description" content="Portfolio of Matt Wujek, interaction designer residing in San Francisco."/>
 	<meta http-equiv="Content-Language" content="en" />
-	<meta property="og:title" content="Student Portfolio: Matt Wujek" />
+	<meta property="og:title" content="Matt Wujek &equiv; Design Portfolio" />
 	<meta property="og:url" content="http://www.mattwujek.com/" />
     <link href='img/icon.ico' rel='shortcut icon' type='image/ico'>
 
     <title>Matt Wujek &equiv; Design Portfolio</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
     <link href="css/bootstrap_2.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/typography.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
