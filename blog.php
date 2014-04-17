@@ -26,6 +26,7 @@
        <?
 $xml = simplexml_load_file('http://mattwujek.tumblr.com/api/read?type=post&start=0&num=8');
 $posts = $xml->xpath("/tumblr/posts/post[@type='regular']");
+
 foreach($posts as $post) {?>
 <?echo '<article class="blog-roll">';?>
 <?echo '<h1 class="post-title">'.$post->{'regular-title'}.'</h1>';?>

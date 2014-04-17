@@ -19,6 +19,13 @@
   font-size: 18px;
   text-indent: 45px;
 }
+iframe{
+  margin:0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+
+}
 
 #wip{
   text-align: center;
@@ -111,8 +118,8 @@ nav a, footer a{
   text-transform: capitalize;
   font-size: 14px;
   letter-spacing: 1px;
-  color:#aaa;
-  border-bottom: 1px solid #aaa;
+  color:#ddd;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 1px;
   transition:0.3s all;
 }
@@ -205,9 +212,9 @@ div.regular_text{
 }
 
 .regular_text h1{
-  font-family: "rooney-web",sans-serif;
+  font-family: "rooney-sans",sans-serif;
   text-transform: none;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
     margin-top: 10px;
@@ -349,7 +356,7 @@ a>figure{cursor: default;}
   display: block;
 
 }
-.blog-roll:after{
+.blog-roll:before{
     content:'';
   display: block;
   max-width:250px;
@@ -366,7 +373,6 @@ a>figure{cursor: default;}
 .post-title{
   color:#333 !important;
   font-weight: 700;
-  font-style: italic;
 }
 
 .date{

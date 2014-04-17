@@ -16,3 +16,15 @@
 - Rewrite bio with insights from senior thesis interview sessions (specifically notes from Amy & kathrin)
 - Update project images (photos of w/o devices)
 
+### WORK
+- Descriptions under the posters (dimensions, amtPages)
+- Images with computers
+- box links
+
+### CV
+- references firefox bug
+- Favicon
+
+###Bio
+- center the CV
+- Link to the logo 
