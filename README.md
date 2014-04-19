@@ -7,6 +7,7 @@
 - add descriptions to project pages (client, date, resouces, etc.)
 - update pdf via .indd, update fonts on CV, and change verbage
 - add wireframes and sketches to each web project!!
+- add 'work' title to more projects section.
 
 ## Finished
 - ~~update copy~~

@@ -23,9 +23,9 @@
 
   <nav>
     <ul>
-      <li><a href="#work">Work</a></li>
-      <li><a href="blog.php">Sketchbook</a></li>
-      <li><a href="contact.php">Bio</a></li>
+      <li><a id="workz" href="#work">Work</a></li>
+      <li><a id="blog" href="blog.php">Sketchbook</a></li>
+      <li><a id="contact" href="contact.php">Bio</a></li>
     </ul>
   </nav>
 

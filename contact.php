@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head><?php include 'header.php'; ?>
+
+<style>
+
+#contact{
+  color:#999;
+  border-color: #999;
+}
+
+#contact:hover {
+  color:#999;
+  border-color: #999; 
+  opacity: 1;
+  cursor:default;
+}
+
+</style>
   </head>
 
   <body id="top">
