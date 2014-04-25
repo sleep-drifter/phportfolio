@@ -3,11 +3,11 @@
 ## To do list
 
 - Remove Bootstrap and update layout Pure Grids
-- make pie favicon
 - add descriptions to project pages (client, date, resouces, etc.)
 - update pdf via .indd, update fonts on CV, and change verbage
-- add wireframes and sketches to each web project!!
-- add 'work' title to more projects section.
+- add wireframes and sketches to (new) web project!
+- add 'work' title to more portfolio div section.
+- add a picture of a stack of sketchbooks for context on the 'sketchbook' section
 
 ## Finished
 - ~~update copy~~
