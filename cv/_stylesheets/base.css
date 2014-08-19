@@ -29,7 +29,15 @@ a:hover{
 	padding-left: 50px;
 	font-family: 'ff-dagny-web-pro',sans-serif;
 	font-size: 14px;
+	font-style: normal;
 
+}
+#references h2{
+	font-family: 'rooney-web',sans-serif !important;
+}
+#references h3{
+	font-family: 'ff-dagny-web-pro',sans-serif !important;
+	font-style: normal;
 }
 
 .bottom .pure-u-7-12, .bottom .pure-u-5-12{
@@ -78,7 +86,7 @@ a:hover{
 
 #references h3{
 	text-transform: capitalize;
-	margin-top: -6px;
+	margin-top: -3px;
 	font-size: 16px;
 	font-weight: 400;
 	font-family: 'ff-dagny-web-pro',sans-serif;
@@ -116,7 +124,9 @@ a:hover{
 
 article h2, article h3, article h4{
 	margin: 2px 0;
-	font-family: "soleil",sans-serif !important;
+	font-family: "rooney-web",sans-serif !important;
+	font-weight: 500;
+	/*font-style: italic;*/
 }
 article h2{
 	font-size: 22px;
@@ -155,6 +165,10 @@ ul{
 	margin: 10px auto;
 	padding:5px 10px;
 	transition:0.3s all;
+	font-family: "ff-dagny-web-pro" !important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 .buttons:hover{
@@ -194,7 +208,7 @@ header h2{
 
 #social_media li:hover{
 	background-color:#aaa;
-	top:-2px;
+	
 
 
 
@@ -245,8 +259,9 @@ header{
 .subject{
 	display:block;
 	font-size: 32px;
-	font-family: "soleil",sans-serif;
-	font-weight: 600;
+	font-family: "rooney-sans",sans-serif !important;
+	font-weight: 700;
+	font-style: normal;
 	border-bottom: 1px solid #333;
 	padding-bottom: 2px;
 	margin: 10px inherit;
@@ -260,14 +275,15 @@ header{
 
 
 header{
-	text-align:left;
+	text-align:center;
 }
 
 header p{
 }
 
 h3{
-	font-family: "soleil",sans-serif;
+	font-family: "rooney-web",sans-serif;
+	/*font-style: italic;*/
 	font-weight:400;
 
 }
@@ -300,13 +316,25 @@ img {
 	content: " ";
 	background: white;
 }
+.expanded{
+	border: 1px solid #ff4136 !important;
+	color:#ff4136;
+	opacity: 0.5;
+}
+
+.expanded:hover{
+	background: #fff;
+	opacity:1;
+
+}
 
 #name{
-	font-family: "soleil",sans-serif;
-	font-weight: 400;
-	text-align: left;
+	font-family: "rooney-web",sans-serif;
+	font-weight: 500;
+	text-align: center;
 	font-size: 28px;
 	display: block;
+	font-style: italic;
 }
 header p{
 	padding: 0;

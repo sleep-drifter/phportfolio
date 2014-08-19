@@ -1,0 +1,1 @@
+$(window).ready(function(){var e=!1,a=$("#ref");$("#accordion").accordion({active:!1,autoHeight:!1,collapsible:!0}),$("#ref").on("click",function(){e===!1?(e=!0,a.empty(),a.addClass("expanded"),a.html("close")):(e=!1,a.empty(),a.removeClass("expanded"),a.html("References +"))})});

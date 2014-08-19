@@ -5,8 +5,10 @@
   <title>Matt Wujek - Resume</title>
 
   <link href="_stylesheets/pure-grid.css" rel="stylesheet">
-
+  <link rel="shortcut icon" href="../img/icon.ico?v=2" />
   <link href="_stylesheets/base.css" rel="stylesheet">
+  <script src="processing-1.4.1.min.js" type="text/javascript"></script>
+
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,17 +28,29 @@
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
 
-  <script type="text/javascript">
 
-    $(window).ready(function() {
-      $( "#accordion" ).accordion({
-        active:false,
-        autoHeight: false,            
-        collapsible: true
-      });
-    });
-
+    <script type="text/javascript">
+    // convenience function to get the id attribute of generated sketch html element
+    function getProcessingSketchId () { return 'arc_overlap_array'; }
   </script>
+  <style type="text/css">
+
+
+#canvascontainer{
+  text-align: center;
+  margin: 0 auto;
+}
+
+  canvas { 
+    display: inline-block;
+    outline: 0px; 
+    margin: 10px auto -5px auto; 
+    text-align:center;
+  }
+
+  </style>
+
+
 </head>
 
 <body>
@@ -44,12 +58,21 @@
 	<div class="pure-g-r container"> <!-- This is the container div -->
 
     <div class="pure-u-1-5">
-      <div class="padding-box">
+      <div class="padding-box" style="align:center;">
         <header>
 
-          <img src="_images/header.png" style="margin-bottom:15px;">
+          <a href="http://mattwujek.com/"><div id="canvascontainer">
+      <canvas id="arc_overlap_array" data-processing-sources="arc_overlap_array.pde" 
+          width="300" height="300">
+        <p>Your browser does not support the canvas tag.</p>
+        <!-- Note: you can put any alternative content here. -->
+      </canvas>
+      <noscript>
+        <p>JavaScript is required to view the contents of this page.</p>
+      </noscript>
+    </div></a>
           <h2 id="name">Matt Wujek</h2>
-          <p>Visual Designer</p>
+          <p>Interaction Designer</p>
           <ul id="social_media">
             <a href="www.linkedin.com/in/mattwujek/"><li id="linkedin"></li></a>
             <a href="https://github.com/mwujek"><li id="gh"></li></a>
@@ -76,7 +99,7 @@
           <div class="pure-u-7-12">
          <ul>
            <li>Graphic Design Major</li>
-           <li>Cumulative GPA: 3.56</li>
+           <li>Cumulative GPA: 3.5</li>
            <li>2012-2014 Dean's Honor Roll</li>
          </ul>
          </div>
@@ -93,14 +116,14 @@
 
         <div class="pure-u-7-12">
         <ul>
-         <li>I work with a variety of media to craft engaging products and experiences in printed and digital formats. I have collaborated with a wide range of clients from non-profits, entrepreneurs, start-ups, universities, to multi-national corporations.</li>
+         <li>I work with a variety of media to craft engaging products and experiences in traditional and digital formats. I have collaborated with a wide range of clients from non-profits, entrepreneurs, start-ups, universities, to multi-national corporations.</li>
          <li class="clients">Clients include:</li>
          <li class="clients">
-           Nike, IDL Worldwide, Clinkle, University of San Francisco (Office of the President), Quesada Gardens Initiative, Revolver Yoga, and Walla Walla Acupuncture
+           Nike, IDL Worldwide, Clinkle, University of San Francisco, Quesada Gardens Initiative, Revolver Yoga, Inside River Art Studio, and Walla Walla Acupuncture
          </li>
 <ul>
          <div id="accordion">
-          <h3 class="buttons"> References +</h3>
+          <h3 class="buttons" id="ref"> References +</h3>
           <div id="references">
 
             
@@ -138,23 +161,40 @@
         </div>
       </article>
 
+
       <article class="pure-g-r">
-      <div class="pure-u-5-12">
-       <h2>Designer</h2>
-       <h3>Graphics Center</h3>
-       <h4> Jan. 2013 - Present</h4>
+    <div class="pure-u-5-12">
+      <h2>Web Designer</h2>
+      <h3>BAMM.tv</h3>
+      <h4> May 2014 - Present</h4>
       </div>
       <div class="pure-u-7-12">
-       <ul>
-        <li>A designer at the Graphic Center takes on projects from various student organizations at University of San Francisco. Due to the fast turnaround of on-campus events and activites, these assignments are always finished in a timely manner. I have designed unique apparel, posters, and other stationary for many of the clubs and students groups on campus. I also redesigned the Graphics Center's website, focusing on usability and a responsive layout for multiple devices.</li>
+      <ul>
+        <li>When I was hirded as a web designer in May 2014, I was assigned the task of enhancing the online experience for business-to-business interactions. In this role, I have continued to develop my skills as a &#39;hybrid&#39; designer by creating delightful digital experiences with traditional static graphics and dynamic prototypes via HTML, CSS, and JavaScript.  
+</li>
       </ul>
       </div>
     </article>
 
+      <article class="pure-g-r">
+      <div class="pure-u-5-12">
+       <h2>Designer</h2>
+       <h3>Graphics Center</h3>
+       <h4> Jan. 2013 - May 2014</h4>
+      </div>
+      <div class="pure-u-7-12">
+       <ul>
+        <li>A designer at the Graphic Center takes on projects from various student organizations at University of San Francisco. Due to the fast turnaround of on-campus events and activites, these jobs are always finished in a timely manner. I have designed unique apparel, posters, and other stationary for clubs and students groups on campus. I also redesigned the Graphics Center's website, focusing on usability and a responsive layout for multiple devices.</li>
+      </ul>
+      </div>
+    </article>
+
+
+
     <article class="pure-g-r">
     <div class="pure-u-5-12">
       <h2>Design Intern</h2>
-      <h3>Univ. of San Francisco</h3>
+      <h3>USF Office of Communications</h3>
       <h4> May 2013 - Sept. 2013</h4>
       </div>
       <div class="pure-u-7-12">
@@ -210,9 +250,9 @@
      <h2 class="pure-u-5-12">Recreation</h2>
      <ul class="pure-u-7-12">
       <li>Drawing &#38; Painting</li>
+      <li>Printmaking</li>
       <li>Hiking &#38; Camping</li>
       <li>Rocking Climbing</li>
-      <li>Printmaking</li>
       <li>Running</li>
       <li>Baseball, go Giants!!</li>
     
@@ -260,5 +300,7 @@
 
 </div><!-- End Container -->
 
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
