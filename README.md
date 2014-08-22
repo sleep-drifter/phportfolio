@@ -1,5 +1,10 @@
 #Personal Portfolio
 
+
+## New Portfolio
+
+- work interactive mock-up for demostration purposes. Use QC or framer.js
+- add relevant tags to CV. e.g. BAMM.tv: front-end dev, UX / Graphics Center: Publication Design
 ## To do list
 
 - Remove Bootstrap and update layout Pure Grids
@@ -24,8 +29,6 @@
 
 ### CV
 - references firefox bug
-- Favicon
+- Favicons
 
-###Bio
-- center the CV
-- Link to the logo 
+
