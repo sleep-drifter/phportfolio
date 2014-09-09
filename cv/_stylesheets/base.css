@@ -144,6 +144,9 @@ article h4{
 }
 
 
+.description > li{
+	line-height: 19px;
+}
 
 
 
