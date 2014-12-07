@@ -1,10 +1,14 @@
 body{
-	font-family: "ff-dagny-web-pro", sans-serif; 
+	font-family: "freight-sans-pro", sans-serif; 
 	font-weight:400;
 	background: #fff;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 }
 *{
-		font-family: 'ff-dagny-web-pro',sans-serif;
+		font-family: 'freight-sans-pro',sans-serif;
 
 }
 
@@ -27,16 +31,28 @@ a:hover{
 #references{
 	background:#fff;
 	padding-left: 50px;
-	font-family: 'ff-dagny-web-pro',sans-serif;
+	font-family: 'freight-sans-pro',sans-serif;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 	font-size: 14px;
 	font-style: normal;
 
 }
 #references h2{
-	font-family: 'rooney-web',sans-serif !important;
+	font-family: 'freight-text-pro',sans-serif !important;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 }
 #references h3{
-	font-family: 'ff-dagny-web-pro',sans-serif !important;
+	font-family: 'freight-sans-pro',sans-serif !important;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 	font-style: normal;
 }
 
@@ -81,7 +97,11 @@ a:hover{
 }
 #references h2{
 	font-weight: 700;
-	font-family: 'ff-dagny-web-pro',sans-serif;
+	font-family: 'freight-sans-pro',sans-serif;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 }
 
 #references h3{
@@ -89,7 +109,11 @@ a:hover{
 	margin-top: -3px;
 	font-size: 16px;
 	font-weight: 400;
-	font-family: 'ff-dagny-web-pro',sans-serif;
+	font-family: 'freight-sans-pro',sans-serif;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 
 }
 
@@ -124,8 +148,12 @@ a:hover{
 
 article h2, article h3, article h4{
 	margin: 2px 0;
-	font-family: "rooney-web",sans-serif !important;
-	font-weight: 500;
+	font-family: "freight-text-pro",sans-serif !important;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
+	font-weight: 600;
 	/*font-style: italic;*/
 }
 article h2{
@@ -145,7 +173,7 @@ article h4{
 
 
 .description > li{
-	line-height: 19px;
+	line-height: 21px;
 }
 
 
@@ -168,7 +196,11 @@ ul{
 	margin: 10px auto;
 	padding:5px 10px;
 	transition:0.3s all;
-	font-family: "ff-dagny-web-pro" !important;
+	font-family: "freight-sans-pro" !important;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -232,14 +264,7 @@ header h2{
 .experience article{
 	background: red!important;
 }
-header img{
-	width:120px;
-	margin: 0 auto;
-	border-radius: 25px;
-	border: 1px white solid;
-	box-shadow: 2px 2px 2px #ccc;
-	border-radius: 60px;
-}
+
 .left article>h2:nth-child(2n){
 	margin-top: 10px;
 	margin-bottom: -5px;
@@ -262,12 +287,17 @@ header{
 .subject{
 	display:block;
 	font-size: 32px;
-	font-family: "rooney-sans",sans-serif !important;
+	font-family: "freight-text-pro",sans-serif !important;
+	-webkit-font-feature-settings: 'tnum';
+	-moz-font-feature-settings: 'tnum';
+	-ms-font-feature-settings: 'tnum';
+	font-feature-settings: 'tnum';
 	font-weight: 700;
 	font-style: normal;
 	border-bottom: 1px solid #333;
 	padding-bottom: 2px;
 	margin: 10px inherit;
+	font-style: italic;
 }
 
 
@@ -285,7 +315,7 @@ header p{
 }
 
 h3{
-	font-family: "rooney-web",sans-serif;
+	font-family: "freight-text-pro",sans-serif;
 	/*font-style: italic;*/
 	font-weight:400;
 
@@ -332,8 +362,8 @@ img {
 }
 
 #name{
-	font-family: "rooney-web",sans-serif;
-	font-weight: 500;
+	font-family: "freight-text-pro",sans-serif;
+	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	display: block;
@@ -351,7 +381,7 @@ header p{
 }
 .pure-u-5-12 h3, .pure-u-5-12 h4{
 	font-size: 16px;
-	font-family: 'ff-dagny-web-pro',sans-serif !important;
+	font-family: 'freight-sans-pro',sans-serif !important;
 		font-weight: 100;
 
  text-transform: none;}
