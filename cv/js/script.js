@@ -2,28 +2,29 @@
 
     var expanded = false;
     var button = $('#ref');
+    var $accordion = $('#references');
 
-      $( "#accordion" ).accordion({
-        active:false,
-        autoHeight: false,            
-        collapsible: true
-      });
+    var accordionH = $('#accordion').innerHeight();
 
-      $('#ref').on('click', function(){
-          if(expanded ===false){
-            expanded = true;
-            button.empty();
-            button.addClass('expanded');
-            button.html('close');
+    $accordion.velocity({ height: 0 },{duration: 0, easing : "easeInSine", visibility: "hidden"});
 
-
-          }else{
-            expanded = false;
-            button.empty();
-            button.removeClass('expanded');
-            button.html('References +');
+    $('#ref').on('click', function(){
+      if(expanded ===false){
+        expanded = true;
+        $accordion.velocity({ height: accordionH + 20 },{duration: 800, easing : "easeInSine", visibility: "visible"});
+        button.empty();
+        button.addClass('expanded');
+        button.html('close');
 
 
-          }
-      });
+      }else{
+        expanded = false;
+        $accordion.velocity({ height: 0 },{duration: 400, easing : "easeInSine", visibility: "visible"});
+        button.empty();
+        button.removeClass('expanded');
+        button.html('References +');
+
+
+      }
     });
+  });

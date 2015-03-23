@@ -1,11 +1,18 @@
 body{
 	font-family: "freight-sans-pro", sans-serif; 
 	font-weight:400;
-	background: #fff;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	/*background: #FAFAF4;*/
+	background: white;
+	-moz-font-feature-settings:"lnum";
+	-ms-font-feature-settings:"lnum";
+	-o-font-feature-settings:"lnum";
+	-webkit-font-feature-settings:"lnum";
+	font-feature-settings:"lnum";
+	color: #483D3D;
+}
+
+body,html{
+	height: 100%;
 }
 *{
 		font-family: 'freight-sans-pro',sans-serif;
@@ -16,12 +23,11 @@ em{
 	border-bottom: 1px dashed #ccc;
 }
 a{
-	text-decoration:none;
-	color: #000;
+	color: #483D3D;
 }
 
 a:hover{
-	border-bottom: 1px dashed #ccc;
+	color: #6D5C5C;
 }
 
 #accordion, #accordion div, #accordion h1, #accordion h3{
@@ -29,30 +35,32 @@ a:hover{
 	outline:none;
 }
 #references{
-	background:#fff;
+	/*background:#fff;*/
 	padding-left: 50px;
 	font-family: 'freight-sans-pro',sans-serif;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-size: 14px;
 	font-style: normal;
+	width: 100%;
+	overflow-y:hidden;
 
 }
 #references h2{
-	font-family: 'freight-text-pro',sans-serif !important;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	font-family: 'ff-meta-serif-web-pro',sans-serif !important;
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 }
 #references h3{
 	font-family: 'freight-sans-pro',sans-serif !important;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-style: normal;
 }
 
@@ -71,8 +79,15 @@ a:hover{
 
 
 .clients{
-	font-weight: 100;
+	/*font-weight: 100;*/
 	margin-top: 14px;
+}
+
+#ref{
+	margin-top: 30px !important;
+	margin-left: 0px;
+	width: 100px;
+	text-align: center;
 }
 #references section{
 	padding-left: 60px;
@@ -98,10 +113,10 @@ a:hover{
 #references h2{
 	font-weight: 700;
 	font-family: 'freight-sans-pro',sans-serif;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 }
 
 #references h3{
@@ -110,10 +125,10 @@ a:hover{
 	font-size: 16px;
 	font-weight: 400;
 	font-family: 'freight-sans-pro',sans-serif;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 
 }
 
@@ -127,9 +142,10 @@ a:hover{
 	font-weight: 400;
 }
 #accordion>div{
-	background: #fff;
+	/*background: #fff;*/
 	padding: 10px;
 	height:auto;
+	width:100%;
 
 }
 
@@ -142,23 +158,27 @@ a:hover{
     }
 
 .container{
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
 article h2, article h3, article h4{
 	margin: 2px 0;
-	font-family: "freight-text-pro",sans-serif !important;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	font-family: "ff-meta-serif-web-pro",sans-serif !important;
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-weight: 600;
 	/*font-style: italic;*/
 }
 article h2{
 	font-size: 22px;
-
+}
+canvas{
+	z-index: -100
+}
+.3-4{
 
 }
 article h3{
@@ -191,41 +211,41 @@ ul{
 
 .buttons{
 	display: block;
-	border:1px #333 solid;
-	display: inline-block;
+	text-decoration: none;
+	border:1px #CDC8C8 solid;
+	color: #CDC8C8;
 	margin: 10px auto;
+	width:120px;
 	padding:5px 10px;
 	transition:0.3s all;
 	font-family: "freight-sans-pro" !important;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 1px;
+	border-radius: 3px;
 }
 
 .buttons:hover{
 	text-decoration: none;
 	border-style:solid;
-	border-color:#333;
-	background: #ccc;
+	border-color:#6D5C5C;
+	color: #6D5C5C;
 	cursor: pointer;
 }
-header h2{
-	display:inline-block;
-	margin: 0px;
-	text-align: left;
 
-}
 #social_media{
 	text-indent: 0;
 	padding:0;
 	margin:0;
+	margin-top: 20px;
 }
-#social_media a:hover{
+#social_media:hover{
 	border:none;
+	cursor: pointer;
 }
 #social_media li{
 	display: inline-block;
@@ -234,7 +254,7 @@ header h2{
 	padding: 0;
 	width:36px;
 	height:36px;
-	background:#333;
+	background:#483D3D;
 	border-radius: 18px;
 	transition:0.3s all;
 	background-image: url(../_images/social_sprite_sm.png);
@@ -242,15 +262,18 @@ header h2{
 
 
 #social_media li:hover{
-	background-color:#aaa;
-	
-
-
+	background-color:#6D5C5C;
 
 }
+#social_media a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	
+}
 #gh{
-	background-position: 2px 7px !important;
-	background-repeat: repeat-x !important;
+	background-image: url(../_images/ello.png) !important;
+	background-size: cover !important;
 
 }
 #twitter{
@@ -269,10 +292,10 @@ header h2{
 	margin-top: 10px;
 	margin-bottom: -5px;
 }
-/*
+
 header{
-	min-width: 200px;
-}*/
+	min-width: 250px;
+}
 
 .secondary{
 	margin-top: 0px!important;
@@ -287,11 +310,11 @@ header{
 .subject{
 	display:block;
 	font-size: 32px;
-	font-family: "freight-text-pro",sans-serif !important;
-	-webkit-font-feature-settings: 'tnum';
-	-moz-font-feature-settings: 'tnum';
-	-ms-font-feature-settings: 'tnum';
-	font-feature-settings: 'tnum';
+	font-family: "ff-meta-serif-web-pro",sans-serif !important;
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	-ms-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-weight: 700;
 	font-style: normal;
 	border-bottom: 1px solid #333;
@@ -315,18 +338,20 @@ header p{
 }
 
 h3{
-	font-family: "freight-text-pro",sans-serif;
+	font-family: "ff-meta-serif-web-pro",sans-serif;
 	/*font-style: italic;*/
 	font-weight:400;
 
 }
 
-img {
-	max-width: 100%;
+header img {
+	max-width: 200px;
 	height: auto;
 	margin:0 auto;
 }
-
+#workExp{
+	z-index: 100;
+}
 
 #workExp article:nth-child(n+3){
 /*	padding:10px;
@@ -358,22 +383,44 @@ img {
 .expanded:hover{
 	background: #fff;
 	opacity:1;
+	color: #ff4136;
 
 }
 
-#name{
-	font-family: "freight-text-pro",sans-serif;
+.name{
+	font-family: "ff-meta-serif-web-pro",sans-serif;
 	font-weight: 900;
 	text-align: center;
 	font-size: 28px;
 	display: block;
-	font-style: italic;
+	margin-bottom: 0px;
+	margin-top: 6px;
+}
+
+.title{
+	text-transform: uppercase;
+	margin-top: -2px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,p,li,a{
+	-moz-font-feature-settings:"lnum";
+	-ms-font-feature-settings:"lnum";
+	-o-font-feature-settings:"lnum";
+	-webkit-font-feature-settings:"lnum";
+	font-feature-settings:"lnum";
 }
 
 
 
+article > div > h3{
+	/*text-transform: uppercase !important;*/
+	font-weight: 500 !important;
+}
 .sub-primary{
-	color:#666;
+	color:#999;
+
 }
 header p{
 	padding: 0;
