@@ -2,6 +2,7 @@
 
     var expanded = false;
     var button = $('#ref');
+    var refText = button.children('span');
     var $accordion = $('#references');
 
     var accordionH = $('#accordion').innerHeight();
@@ -11,19 +12,50 @@
     $('#ref').on('click', function(){
       if(expanded ===false){
         expanded = true;
-        $accordion.velocity({ height: accordionH + 20 },{duration: 800, easing : "easeInSine", visibility: "visible"});
-        button.empty();
-        button.addClass('expanded');
-        button.html('close');
+        button.velocity({top:20},{
+          duration:300,
+          easing: 'easeInCubic',
+          begin: function(){
+            refText.velocity({top:-20}, {
+              duration:200,
+              complete: function(){
+                refText.empty();
+                button.toggleClass('expanded');
+                refText.html('close');
+
+              }
+              }).velocity('reverse', {duration:200});
+          }
+        })
+        .velocity('reverse',{duration:300});
+
+        $accordion.velocity({ height: accordionH },{
+          duration: 800,
+          easing : "easeInSine",
+          visibility: "visible",
+        });
 
 
       }else{
         expanded = false;
         $accordion.velocity({ height: 0 },{duration: 400, easing : "easeInSine", visibility: "visible"});
-        button.empty();
-        button.removeClass('expanded');
-        button.html('References +');
+        button.velocity({top:-20},{
+          duration:300,
+          easing: 'easeInCubic',
+          begin: function(){
+            refText.velocity({top:20}, {
+              duration:200,
+              complete: function(){
+                console.log('change text');
+                refText.empty();
+                button.toggleClass('expanded');
+                refText.html('references &#43;');
 
+              }
+              }).velocity('reverse', {duration:200});
+          }
+        })
+        .velocity('reverse',{duration:300});
 
       }
     });

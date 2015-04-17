@@ -46,6 +46,8 @@ a:hover{
 	font-style: normal;
 	width: 100%;
 	overflow-y:hidden;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 
 }
 #references h2{
@@ -88,6 +90,12 @@ a:hover{
 	margin-left: 0px;
 	width: 100px;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+	span{
+		position: relative;
+		display: inline;
+	}
 }
 #references section{
 	padding-left: 60px;
@@ -133,7 +141,7 @@ a:hover{
 }
 
 #accordion{
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	position: relative;
 }
 #accordion h1{
@@ -144,6 +152,7 @@ a:hover{
 #accordion>div{
 	/*background: #fff;*/
 	padding: 10px;
+	padding-bottom: 0px;
 	height:auto;
 	width:100%;
 
@@ -214,7 +223,7 @@ ul{
 	margin: 10px auto;
 	width:120px;
 	padding:5px 10px;
-	transition:0.3s all;
+	transition:0.3s border-color, 0.3s color;
 	font-family: "freight-sans-pro" !important;
 	-webkit-font-feature-settings: 'lnum';
 	-moz-font-feature-settings: 'lnum';
