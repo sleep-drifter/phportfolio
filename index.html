@@ -7,17 +7,18 @@
     <meta name="keywords" content="Matt Wujek graphic design student San Francisco Walla interaction web ux user experience"/>
 	<meta name="description" content="Portfolio of Matt Wujek, interaction designer residing in San Francisco."/>
 	<meta http-equiv="Content-Language" content="en" />
-	<meta property="og:title" content="Matt Wujek &equiv; Portfolio" />
-	<meta property="og:url" content="http://www.mattwujek.com/" />
-	<meta property="og:image" content="http://mattwujek.com/fb.png"/>
-	<meta property="og:site_name" content="Matt Wujek &equiv; Portfolio"/>
-	<meta property="og:type"   content="website" /> 
 
     <link href='img/icon.ico' rel='shortcut icon' type='image/ico'>
 
-    <title>just call me wuj</title>
-       <script type="text/javascript" src="//use.typekit.net/xrp7gva.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <title>Just Call Me Wuj</title>
+    <script src="//use.typekit.net/ugo4bdx.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="bower_components/velocity/velocity.min.js"></script>
+  <script src="bower_components/paper/dist/paper-full.min.js"></script>
+  <script src="bower_components/typed.js/dist/typed.min.js"></script>
+  <script type="text/paperscript" canvas="bg-image" src="js/paperWuj-min.js"></script>
     <style type="text/css">
 
 #container{
@@ -34,11 +35,11 @@
 	font-weight: 300;
 }
 
-.p2{
+.p2, .email-here{
 	color:#333;
 	font-size: 14px;
 	margin: 5px;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 }
 
 p{
@@ -48,18 +49,19 @@ p{
 
 
 .h5{
-	font-family: "coronette", sans-serif;
+	font-family: "franklin-gothic-urw", sans-serif;
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 
 
-.p2{
-	font-family: "ubuntu-mono", sans-serif;
-	font-weight: 400;
-	font-size: 14px;
+.p2, .email-here{
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .cv-btn{
@@ -68,27 +70,78 @@ p{
 	padding:10px 6px;
 }
 
-    </style>
-    <!--
-    <script src="js/script.js"></script>
-    -->
+#bg-image{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.5;
 
- 
+}
+
+.email-me{
+	color: #4A90E2;
+	text-decoration: underline;
+	opacity: 0.7;
+	transition: opacity 0.3s;
+}
+.email-me:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+
+.email-here{
+	border-top:1px #ccc solid;
+	padding-top:10px;
+	margin: 0 auto;
+	max-width: 300px;
+	opacity: 0;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+    </style>
 
   </head>
   <body>
+  <canvas id="bg-image" resize></canvas>
   <div id="container">
 
-  <img style="margin:0px auto 20px auto; width:250px; display:block;" src="img-index/profile" alt="Matt Wujek climbs trees">
+  <img style="margin:0px auto 20px auto; width:250px; display:block; border-radius:150px" src="img/profile.jpg" alt="Matt Wujek">
 
-    <h1 class="h5">Be Right Back</h1>
-    <p class="p2">Hello! My name is Matt, but you can just call me Wuj. I currently work as a freelance designer in the Bay Area. My portfolio is currently under construction and will be online soon! You can still check out my <a href="http://cv.mattwujek.com/">CV</a> or find me on <a href="https://twitter.com/m_wuj">Twitter</a> and <a href="https://ello.co/wuj">Ello</a>. Thanks for stopping by!</p>
-<!--     <a href="http://cv.mattwujek.com/" class="cv-btn">View my CV</a>
- -->
+    <h1 class="h5">Just call me Wuj</h1>
+    <p class="p2">Hi! My name is Matt, but you can just call me Wuj. I currently work as a freelance designer in the Bay Area.  Designing interfaces without animation and interactivity is like showing up to the ballpark 30 minutes late without your cleats. I'm crazy about the outdoors, running, and the <span class="go-giants">Giants</span>.</p>
+    <p class="p2">A good deal of portfolio contains projects that my clients wish to keep private. I have permission to share my work with potential employers, so if you like to see my work, please <span class="email-me">email me</span>. Thanks for stopping by!</p>
+    <p style="text-align:center" class="email-here"></p>
 
   </div>
 
-  <script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+  	$('.email-here').velocity({scaleX:0},{duration:0});
+  	$('.email-me').click(function() {
+  		$('.email-here').velocity({opacity:1},{duration:500,
+  			complete: function(){
+  				$('.email-here').velocity({scaleX:1},{duration:500, complete: function(){
+  					$('.email-here').typed({
+			  			strings: ["mattwujek@gmail.com"],
+						contentType: 'html',
+						typeSpeed: 50,
+						showCursor: false
+			  		});
+  				}
+  			});
+  			}
+  		});
+  	});
+  });
+
+  </script>
+
+  <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
